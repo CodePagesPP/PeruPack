@@ -15,13 +15,7 @@
       list-style:none;
   }
 
-  .row .logo-header {
-      width: 90px;
-      height: 90px;
-      border-radius: 50%;
-      transition: 1s;
-      margin-top: 90px;
-  }
+ 
   
   a {
       color:inherit;
@@ -187,277 +181,223 @@
   }
   /* 상단 메뉴 */
   .top-bar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100px;
-    transition: background .3s;
-    z-index: 1000;
-    background-color: rgba(255, 255, 255, 0.96);
-    
-    align-items: center;
-    justify-content: center;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    transition:background .3s;
+    z-index:1000;
 }
-
-.menu-box-1 > ul {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    padding-top: 20px;
-    padding: 10px;
-    margin: 0;
-}
-
-.menu-box-1 > ul > li {
-    padding: 0 20px;
-    margin-top: -50px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-}
-
-
-
-  .wrap > .top-bar > .menu-box-1 > ul > li {
-      padding:0 20px 15px 0;
-      text-align: center;
-      top: 50%;
-      left: 50%;
-      
-  }
-
-  .wrap > .top-bar > .menu-box-1 > ul > li > img{
+.wrap > .top-bar > .menu-box-1 > ul > li {
     padding:0 20px 15px 0;
-    text-align: center;
-    top: 50%;
-    left: 50%;
-    margin-top: 10%;
 }
-  .wrap > .top-bar:hover {
-      background-color:white;
-  }
-  html.not-scroll-top-0 .top-bar {
-      background-color:rgba(255,255,255,0.96);
-      box-shadow:3px 0px 8px 1px #afafaf;
-  } 
-  html.not-scroll-top-0 .row .logo-header {
-    width: 70px;
-    height: 70px;
-    padding-top: 0;
-    transition: 1s;
-    margin-top: 0;
-  }
-  .wrap > .top-bar > .menu-box-1 > ul > li > a {
-      color:#000000;
-      font-size:20px;
-      font-weight:500;
-  }
-  .wrap > .top-bar:hover > .menu-box-1 > ul > li > a , html.not-scroll-top-0 .wrap > .top-bar > .menu-box-1 > ul > li > a {
-      color:#222222;
-  }
-  /* 로고 */
-  .wrap > .top-bar > div.logo > a {
-      
-      position:relative;
-      display:block;
-      top:42px;
-      left:2%;
-      width:125px;
-      height:10px;
-  }
-  .wrap > .top-bar > .logo > a::after {
-      content:"";
-      
-      position:absolute;
-      top:0;
-      left:0;
-      width:100%;
-      height:100%;
-      z-index:1;
-      opacity:0;
-      transition:opacity .3s;
-  }
-  html.not-scroll-top-0 .wrap > .top-bar > .logo > a::after, .wrap > .top-bar:hover > .logo > a::after {
-      opacity:1;
-  }
-  
-  /* 사이드메뉴 */
-  .wrap > .top-bar > .gnb > .gnb-menu {
-      right:1%;
-      top:15px;
-  }
-  .wrap > .top-bar > .gnb > .gnb-menu > ul > li {
-      padding-right:30px;
-  }
-  .wrap > .top-bar > .gnb > .gnb-menu > ul > li > a {
-      color:#dfdfdf;
-      font-weight:300;
-      font-size:14px;
-      position:relative;
-  }
-  .wrap > .top-bar > .gnb > .gnb-menu > ul > li:hover > a {
-      text-decoration:underline;
-  }
-  .wrap > .top-bar:hover > .gnb > .gnb-menu > ul > li > a, html.not-scroll-top-0 .wrap > .top-bar > .gnb > .gnb-menu > ul > li > a {
-      color:#222222;
-  }
-  .wrap > .top-bar > .gnb > .gnb-menu > ul > li:nth-child(1) > a::after, .wrap > .top-bar > .gnb > .gnb-menu > ul > li:nth-child(2) > a::after, .wrap > .top-bar > .gnb > .gnb-menu > ul > li:nth-child(3) > a::after {
-      content:"·";
-      position:absolute;
-      top:0;
-      margin-left:10px;
-  }
-  .wrap > .top-bar > .gnb > .gnb-menu > ul > li:nth-child(4) > a::after {
-      content:"";
-      position:absolute;
-      background-color:#dfdfdf;
-      height:50%;
-      width:1px;
-      top:50%;
-      transform:translateY(-50%);
-      left:42px;
-  }
-  .wrap > .top-bar:hover > .gnb > .gnb-menu > ul > li:nth-child(4) > a::after, html.not-scroll-top-0 .wrap > .top-bar > .gnb > .gnb-menu > ul > li:nth-child(4) > a::after {
-      background-color:#222222;
-  }
-  /* 상단 우측 버튼 */
-  .wrap > .top-bar > .gnb > .btns {
-      top:0;
-  }
-  .wrap > .top-bar > .gnb > .btns >.search-btn {
-      background-image:url(https://www.komsco.com/images/site/kor/layout/search_ico.png);
-      display:inline-block;
-      width:31px;
-      height:32px;
-      position:relative;
-      top:55px;
-      right:50px;
-  }
-  .wrap > .top-bar > .gnb > .btns >.search-btn::after {
-      content:"";
-      display:block;
-      background-image:url(https://www.komsco.com/images/site/kor/layout/search_ico_on.png);
-      position:absolute;
-      width:31px;
-      height:32px;
-      opacity:0;
-      transition:opacity .3s;
-  }
-  html.not-scroll-top-0 .wrap > .top-bar > .gnb > .btns >.search-btn::after, .wrap > .top-bar:hover > .gnb > .btns > .search-btn::after {
-      opacity:1;
-  }
-  .wrap > .top-bar > .gnb > .btns > .allmenu-btn {
-      background-image:url(https://www.komsco.com/images/site/kor/layout/allmenu_ico.png);
-      display:inline-block;
-      width:31px;
-      height:32px;
-      position:relative;
-      top:55px;
-      right:40px;    
-  }
-  .wrap > .top-bar > .gnb > .btns >.allmenu-btn::after {
-      content:"";
-      display:block;
-      background-image:url(https://www.komsco.com/images/site/kor/layout/allmenu_ico2.png);
-      position:absolute;
-      width:31px;
-      height:32px;
-      opacity:0;
-      transition:opacity .3s;
-  }
-  html.not-scroll-top-0 .wrap .top-bar > .gnb > .btns >.allmenu-btn::after, .wrap .top-bar:hover > .gnb > .btns >.allmenu-btn::after {
-      opacity:1;
-  }
- 
-  .top-bar .menu-box-1 > ul > li > a {
-      padding:0 20px;
-      font-size:1.3rem;
-      letter-spacing: .8px;
-      font-weight:bold;
-  }
-  
-  .top-bar .menu-box-1 > ul > li:first-child > a {
-      padding-left:200px;
-  }
-  
-  .top-bar .menu-box-1 > ul > li:last-child > a {
-      padding-right:200px;
-  }
-  
-  @media ( max-width:1100px ) {
-      .top-bar .menu-box-1 > ul > li:first-child > a {
-          padding-left:50px;
-      }
-  
-      .top-bar .menu-box-1 > ul > li:last-child > a {
-          padding-right:50px;
-      }
-  }
-  
-  .top-bar .menu-box-1 > ul > li > a > span {
-      padding:10px 0;
-  }
-  html.not-scroll-top-0 .top-bar .menu-box-1 > .li-indicator-1-box > .li-indicator-1{
+.wrap > .top-bar:hover {
+    background-color:white;
+}
+html.not-scroll-top-0 .top-bar {
+    background-color:rgba(255,255,255,0.96);
+    box-shadow:3px 0px 8px 1px #afafaf;
+} 
+.wrap > .top-bar > .menu-box-1 > ul > li > a {
+    color:#fff;
+    font-size:20px;
+    font-weight:500;
+}
+.wrap > .top-bar:hover > .menu-box-1 > ul > li > a , html.not-scroll-top-0 .wrap > .top-bar > .menu-box-1 > ul > li > a {
+    color:#222222;
+}
+/* 로고 */
+.wrap > .top-bar > div.logo > a {
+    background-image:url(https://www.komsco.com/images/site/kor/layout/logo.png);
+    position:relative;
+    display:block;
+    top:42px;
+    left:2%;
+    width:125px;
+    height:43px;
+}
+.wrap > .top-bar > .logo > a::after {
+    content:"";
+    background-image:url(https://www.komsco.com/images/site/kor/layout/logo2.png);
     position:absolute;
-      top:-25px;
-      left:-700px;
-      width:100px;
-      height:2px;
-      background-color:#ff6525;
-      transition:top 0.3s, left 0.3s, width 0.3s, height 0.3s;
-      z-index:100000;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:1;
+    opacity:0;
+    transition:opacity .3s;
 }
-  
-  /* 인디케이터 */
-  .top-bar .menu-box-1 > .li-indicator-1-box > .li-indicator-1 {
-      position:absolute;
-      top:-82px;
-      left:-700px;
-      width:100px;
-      height:2px;
-      background-color:#ff6525;
-      transition:top 0.3s, left 0.3s, width 0.3s, height 0.3s;
-      z-index:100000;
-  }
-  /* 컨텐트 박스, 서브메뉴 박스 */
-  .top-bar .content-box {
-      height:0;
-      overflow:hidden;
-      transition:height .5s;
-      z-index:10000;
-  }
-  .top-bar .content-box > ul > li {
-      display:none;
-  }
-  .top-bar:hover .content-box > ul > li.active {
-      display:block;
-  }
-  .top-bar .content-box > ul > li > .row > .cell:first-child {
-      width:350px;
-  }
-  .top-bar .content-box > ul > li > .row > .cell:last-child {
-      width:calc(100% - 350px);
-      padding:40px 30px;
-      background-color:#fff;
-  }
-  .top-bar:hover .content-box > ul > li > .row > .cell:last-child > nav > ul > li {
-      width:130px;
-      height:9px;
-      padding-right:20%;
-      margin-bottom:60px;
-      white-space:nowrap;
-  }
-  .top-bar .content-box > .left-bg {
-      width:350px;
-      background-color:#EBEDEF;
-      z-index:-1;
-  }
-  
-  .top-bar .content-box > .left-bg > .img-1 {
-      margin-left:100px;
-      margin-bottom:-100px;
-  }
+html.not-scroll-top-0 .wrap > .top-bar > .logo > a::after, .wrap > .top-bar:hover > .logo > a::after {
+    opacity:1;
+}
+
+/* 사이드메뉴 */
+.wrap > .top-bar > .gnb > .gnb-menu {
+    right:1%;
+    top:15px;
+}
+.wrap > .top-bar > .gnb > .gnb-menu > ul > li {
+    padding-right:30px;
+}
+.wrap > .top-bar > .gnb > .gnb-menu > ul > li > a {
+    color:#dfdfdf;
+    font-weight:300;
+    font-size:14px;
+    position:relative;
+}
+.wrap > .top-bar > .gnb > .gnb-menu > ul > li:hover > a {
+    text-decoration:underline;
+}
+.wrap > .top-bar:hover > .gnb > .gnb-menu > ul > li > a, html.not-scroll-top-0 .wrap > .top-bar > .gnb > .gnb-menu > ul > li > a {
+    color:#222222;
+}
+.wrap > .top-bar > .gnb > .gnb-menu > ul > li:nth-child(1) > a::after, .wrap > .top-bar > .gnb > .gnb-menu > ul > li:nth-child(2) > a::after, .wrap > .top-bar > .gnb > .gnb-menu > ul > li:nth-child(3) > a::after {
+    content:"·";
+    position:absolute;
+    top:0;
+    margin-left:10px;
+}
+.wrap > .top-bar > .gnb > .gnb-menu > ul > li:nth-child(4) > a::after {
+    content:"";
+    position:absolute;
+    background-color:#dfdfdf;
+    height:50%;
+    width:1px;
+    top:50%;
+    transform:translateY(-50%);
+    left:42px;
+}
+.wrap > .top-bar:hover > .gnb > .gnb-menu > ul > li:nth-child(4) > a::after, html.not-scroll-top-0 .wrap > .top-bar > .gnb > .gnb-menu > ul > li:nth-child(4) > a::after {
+    background-color:#222222;
+}
+/* 상단 우측 버튼 */
+.wrap > .top-bar > .gnb > .btns {
+    top:0;
+}
+.wrap > .top-bar > .gnb > .btns >.search-btn {
+    background-image:url(https://www.komsco.com/images/site/kor/layout/search_ico.png);
+    display:inline-block;
+    width:31px;
+    height:32px;
+    position:relative;
+    top:55px;
+    right:50px;
+}
+.wrap > .top-bar > .gnb > .btns >.search-btn::after {
+    content:"";
+    display:block;
+    background-image:url(https://www.komsco.com/images/site/kor/layout/search_ico_on.png);
+    position:absolute;
+    width:31px;
+    height:32px;
+    opacity:0;
+    transition:opacity .3s;
+}
+html.not-scroll-top-0 .wrap > .top-bar > .gnb > .btns >.search-btn::after, .wrap > .top-bar:hover > .gnb > .btns > .search-btn::after {
+    opacity:1;
+}
+.wrap > .top-bar > .gnb > .btns > .allmenu-btn {
+    background-image:url(https://www.komsco.com/images/site/kor/layout/allmenu_ico.png);
+    display:inline-block;
+    width:31px;
+    height:32px;
+    position:relative;
+    top:55px;
+    right:40px;    
+}
+.wrap > .top-bar > .gnb > .btns >.allmenu-btn::after {
+    content:"";
+    display:block;
+    background-image:url(https://www.komsco.com/images/site/kor/layout/allmenu_ico2.png);
+    position:absolute;
+    width:31px;
+    height:32px;
+    opacity:0;
+    transition:opacity .3s;
+}
+html.not-scroll-top-0 .wrap .top-bar > .gnb > .btns >.allmenu-btn::after, .wrap .top-bar:hover > .gnb > .btns >.allmenu-btn::after {
+    opacity:1;
+}
+/* 상단 메뉴 끝 */
+/* 상단 서브메뉴시작 */
+.top-bar .menu-box-1 > ul > li > a {
+    padding:0 20px;
+    font-size:1.3rem;
+    letter-spacing:-0.1rem;
+    font-weight:bold;
+}
+
+.top-bar .menu-box-1 > ul > li:first-child > a {
+    padding-left:200px;
+}
+
+.top-bar .menu-box-1 > ul > li:last-child > a {
+    padding-right:200px;
+}
+
+@media ( max-width:1100px ) {
+    .top-bar .menu-box-1 > ul > li:first-child > a {
+        padding-left:50px;
+    }
+
+    .top-bar .menu-box-1 > ul > li:last-child > a {
+        padding-right:50px;
+    }
+}
+
+.top-bar .menu-box-1 > ul > li > a > span {
+    padding:10px 0;
+}
+/* 인디케이터 */
+.top-bar .menu-box-1 > .li-indicator-1-box > .li-indicator-1 {
+    position:absolute;
+    top:4px;
+    left:-700px;
+    width:100px;
+    height:2px;
+    background-color:#1A5BB1;
+    transition:top 0.3s, left 0.3s, width 0.3s, height 0.3s;
+    z-index:100000;
+}
+/* 컨텐트 박스, 서브메뉴 박스 */
+.top-bar .content-box {
+    height:0;
+    overflow:hidden;
+    transition:height .5s;
+    z-index:10000;
+}
+.top-bar .content-box > ul > li {
+    display:none;
+}
+.top-bar:hover .content-box > ul > li.active {
+    display:block;
+}
+.top-bar .content-box > ul > li > .row > .cell:first-child {
+    width:350px;
+}
+.top-bar .content-box > ul > li > .row > .cell:last-child {
+    width:calc(100% - 350px);
+    padding:40px 30px;
+    background-color:#fff;
+}
+.top-bar:hover .content-box > ul > li > .row > .cell:last-child > nav > ul > li {
+    width:130px;
+    height:165px;
+    padding-right:20%;
+    margin-bottom:60px;
+    white-space:nowrap;
+}
+.top-bar .content-box > .left-bg {
+    width:350px;
+    background-color:#EBEDEF;
+    z-index:-1;
+}
+
+.top-bar .content-box > .left-bg > .img-1 {
+    margin-left:100px;
+    margin-bottom:-100px;
+}
   /* 컨텐트 박스 - 서브 메뉴 박스 */
   .content-box > .left-bg > img {
       z-index:10;
