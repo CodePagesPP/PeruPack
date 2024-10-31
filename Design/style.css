@@ -1,21 +1,71 @@
 
- @import url('https://fonts.googleapis.com/css2?family=Jacquard+24&family=Montserrat+Alternates:ital,wght@1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,300;1,300&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ 
+ @font-face {
+    font-family: BrownAustin;
+    src: url(../fonts/Brown\ Austin\ Sans.ttf);
+}
 
 
   
   html {
-      font-family: "Noto Sans KR", sans-serif;
-      
+      font-family: "BrownAustin", sans-serif;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
   }
-  
+
  
   body, ul, li, h1 {
       margin:0;
       padding:0;
       list-style:none;
+      overflow: hidden;
   }
 
- 
+
+
+  .questions__offerautos{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    padding-top: 100px;
+
+}
+
+.questions__offerautos .barraautos{
+    
+    display: flex;
+    animation: scroll2 15s linear infinite;
+    -webkit-animation:scroll2 15s linear infinite;
+    width: calc(275px * 10);
+}   
+
+.questions__offerautos .marcaautos{
+    width: 100%;
+    
+}
+.subtitlemarcasautos{
+    color: black;
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+.questions__offerautos .barraautos img{
+    width: 200px;
+    border-radius: 50%;
+    margin: 40px;
+}
+
+@keyframes scroll2 {
+    0%{
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100%{
+        -webkit-transform: translateX(calc(-275px * 10));
+        transform: translateX(calc(-275px * 10));
+    }
+}
   
   a {
       color:inherit;
@@ -42,6 +92,8 @@
       float:left;
       box-sizing:border-box;
   }
+
+ 
   
   .cell-right {
       float:right;
@@ -130,30 +182,95 @@
   .con-min-width {
       min-width:1180px;
   }
+
+.infoheader{
+    height: 30px;
+}
+
+
+.infoheader .info p{
+    margin-top: 2px;
+    font-weight: 900;
+}
+
+
+
+  .barrainfo .info{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    max-width: 90%;
+    margin: 0 auto;
+    
+    font-weight: 500px;
+  }
+
   
+  .barrainfo .info img{
+    width: 30px;
+    height: 30px;
+    
+  }
  
   .con {
       max-width:1280px;
   }
  
-  @media (max-width:1020px) {
-      .top-bar{display:none;}
+  @media (max-width:1214px) {
+     .top-bar{display:none;}
+      .top-bar2{display:none;}
       #page-nav{display:none;}
   }
-  @media (min-width:1021px) {
+  @media (min-width:1214px) {
       .mobile-menu-bar{display:none;
-    width: 100%;}
+        
+    width: 100%;
+overflow-x: hidden;}
+.mobile-menu{display:none;
+        
+    width: 100%;
+overflow-x: hidden;}
+
 
   }
+
+.mobile-menu{
+    text-align: center;
+    
+}
+
   .mobile-menu-bar {
-      top:0;
-      left:0;
-      background:#fff;
-      height:80px;
+    position:fixed;
+    padding-top: 20px;
+    left:0;
+    height: 50px;
+    width:100%;
+    transition:background .3s;
+    z-index:10;
+    background-color: #1b39bb
   }
+
+.mobile-menu-bar > .top-bar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    transition:background .3s;
+    z-index:1000;
+    background-color: rgba(255, 251, 251);
+}
+html.not-scroll-top-0 .mobile-menu-bar {
+    top: 0;
+    background-color:#1b39bb;
+    box-shadow:3px 0px 8px 1px #afafaf;
+    transition: 0.4s;
+} 
+
   .mobile-menu-bar > .logo > a {
       position:absolute;
-      top:20px;
+      top:1px;
       left:15px;
       
       background-repeat:no-repeat;
@@ -165,13 +282,7 @@
       top:25px;
       right:2%;
   }
-  .mobile-menu-bar > .btns > a.search-btn {
-      background-image:url(https://www.komsco.com/images/site/kor/layout/search_ico_on.png);
-      background-repeat:no-repeat;
-      width:32px;
-      height:31px;
-      display:inline-block;
-  }
+
   .mobile-menu-bar > .btns > a.allmenu-btn {
       background-image:url(https://www.komsco.com/images/site/kor/layout/allmenu_ico2.png);
       background-repeat:no-repeat;
@@ -179,27 +290,27 @@
       height:31px;
       display:inline-block;
   }
-  /* 상단 메뉴 */
-  .top-bar {
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    transition:background .3s;
-    z-index:1000;
-}
+
+
+
+
 .wrap > .top-bar > .menu-box-1 > ul > li {
     padding:0 20px 15px 0;
+    
 }
-.wrap > .top-bar:hover {
-    background-color:white;
-}
+
+
+
+
+
+
 html.not-scroll-top-0 .top-bar {
-    background-color:rgba(255,255,255,0.96);
+    position: static;
     box-shadow:3px 0px 8px 1px #afafaf;
 } 
 .wrap > .top-bar > .menu-box-1 > ul > li > a {
-    color:#fff;
+    background-color: #000;
+    color:#000000;
     font-size:20px;
     font-weight:500;
 }
@@ -208,17 +319,16 @@ html.not-scroll-top-0 .top-bar {
 }
 /* 로고 */
 .wrap > .top-bar > div.logo > a {
-    background-image:url(https://www.komsco.com/images/site/kor/layout/logo.png);
+    height: 5px;
     position:relative;
     display:block;
-    top:42px;
+    top:20px;
     left:2%;
     width:125px;
-    height:43px;
+    
 }
 .wrap > .top-bar > .logo > a::after {
     content:"";
-    background-image:url(https://www.komsco.com/images/site/kor/layout/logo2.png);
     position:absolute;
     top:0;
     left:0;
@@ -232,109 +342,10 @@ html.not-scroll-top-0 .wrap > .top-bar > .logo > a::after, .wrap > .top-bar:hove
     opacity:1;
 }
 
-/* 사이드메뉴 */
-.wrap > .top-bar > .gnb > .gnb-menu {
-    right:1%;
-    top:15px;
-}
-.wrap > .top-bar > .gnb > .gnb-menu > ul > li {
-    padding-right:30px;
-}
-.wrap > .top-bar > .gnb > .gnb-menu > ul > li > a {
-    color:#dfdfdf;
-    font-weight:300;
-    font-size:14px;
-    position:relative;
-}
-.wrap > .top-bar > .gnb > .gnb-menu > ul > li:hover > a {
-    text-decoration:underline;
-}
-.wrap > .top-bar:hover > .gnb > .gnb-menu > ul > li > a, html.not-scroll-top-0 .wrap > .top-bar > .gnb > .gnb-menu > ul > li > a {
-    color:#222222;
-}
-.wrap > .top-bar > .gnb > .gnb-menu > ul > li:nth-child(1) > a::after, .wrap > .top-bar > .gnb > .gnb-menu > ul > li:nth-child(2) > a::after, .wrap > .top-bar > .gnb > .gnb-menu > ul > li:nth-child(3) > a::after {
-    content:"·";
-    position:absolute;
-    top:0;
-    margin-left:10px;
-}
-.wrap > .top-bar > .gnb > .gnb-menu > ul > li:nth-child(4) > a::after {
-    content:"";
-    position:absolute;
-    background-color:#dfdfdf;
-    height:50%;
-    width:1px;
-    top:50%;
-    transform:translateY(-50%);
-    left:42px;
-}
-.wrap > .top-bar:hover > .gnb > .gnb-menu > ul > li:nth-child(4) > a::after, html.not-scroll-top-0 .wrap > .top-bar > .gnb > .gnb-menu > ul > li:nth-child(4) > a::after {
-    background-color:#222222;
-}
-/* 상단 우측 버튼 */
-.wrap > .top-bar > .gnb > .btns {
-    top:0;
-}
-.wrap > .top-bar > .gnb > .btns >.search-btn {
-    background-image:url(https://www.komsco.com/images/site/kor/layout/search_ico.png);
-    display:inline-block;
-    width:31px;
-    height:32px;
-    position:relative;
-    top:55px;
-    right:50px;
-}
-.wrap > .top-bar > .gnb > .btns >.search-btn::after {
-    content:"";
-    display:block;
-    background-image:url(https://www.komsco.com/images/site/kor/layout/search_ico_on.png);
-    position:absolute;
-    width:31px;
-    height:32px;
-    opacity:0;
-    transition:opacity .3s;
-}
-html.not-scroll-top-0 .wrap > .top-bar > .gnb > .btns >.search-btn::after, .wrap > .top-bar:hover > .gnb > .btns > .search-btn::after {
-    opacity:1;
-}
-.wrap > .top-bar > .gnb > .btns > .allmenu-btn {
-    background-image:url(https://www.komsco.com/images/site/kor/layout/allmenu_ico.png);
-    display:inline-block;
-    width:31px;
-    height:32px;
-    position:relative;
-    top:55px;
-    right:40px;    
-}
-.wrap > .top-bar > .gnb > .btns >.allmenu-btn::after {
-    content:"";
-    display:block;
-    background-image:url(https://www.komsco.com/images/site/kor/layout/allmenu_ico2.png);
-    position:absolute;
-    width:31px;
-    height:32px;
-    opacity:0;
-    transition:opacity .3s;
-}
-html.not-scroll-top-0 .wrap .top-bar > .gnb > .btns >.allmenu-btn::after, .wrap .top-bar:hover > .gnb > .btns >.allmenu-btn::after {
-    opacity:1;
-}
-/* 상단 메뉴 끝 */
-/* 상단 서브메뉴시작 */
-.top-bar .menu-box-1 > ul > li > a {
-    padding:0 20px;
-    font-size:1.3rem;
-    letter-spacing:-0.1rem;
-    font-weight:bold;
-}
 
-.top-bar .menu-box-1 > ul > li:first-child > a {
-    padding-left:200px;
-}
 
-.top-bar .menu-box-1 > ul > li:last-child > a {
-    padding-right:200px;
-}
+
+
 
 @media ( max-width:1100px ) {
     .top-bar .menu-box-1 > ul > li:first-child > a {
@@ -349,55 +360,202 @@ html.not-scroll-top-0 .wrap .top-bar > .gnb > .btns >.allmenu-btn::after, .wrap 
 .top-bar .menu-box-1 > ul > li > a > span {
     padding:10px 0;
 }
+
+
+
+
+
+
+.top-bar2 {
+    position:fixed;
+    padding-top: 20px;
+    top:30px;
+    left:0;
+    width:100%;
+    transition:background .3s;
+    z-index:10;
+    background-color: #1b39bb
+    
+}
+
+
+.wrap > .top-bar2 > .menu-box-1 > ul > li {
+    padding:0 20px 15px 0;
+    
+}
+
+
+.wrap > .top-bar2:hover {
+    background-color:#1b39bb
+}
+html.not-scroll-top-0 .top-bar2 {
+    top: 0;
+    background-color:#1b39bb;
+    box-shadow:3px 0px 8px 1px #afafaf;
+    transition: 0.3s;
+} 
+.wrap > .top-bar2 > .menu-box-1 > ul > li > a {
+    
+    color:#ffffff;
+    font-size:20px;
+    font-weight:500;
+}
+.wrap > .top-bar2:hover > .menu-box-1 > ul > li > a , html.not-scroll-top-0 .wrap > .top-bar2 > .menu-box-1 > ul > li > a {
+    color:#ffffff;
+}
+/* 로고 */
+.wrap > .top-bar2 > div.logo > a {
+    
+    position:relative;
+    display:block;
+    top:-10px;
+    left:2%;
+    width:125px;
+    height:0;
+}
+.wrap > .top-bar2 > .logo > a::after {
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:1;
+    opacity:0;
+    transition:opacity .3s;
+}
+html.not-scroll-top-0 .wrap > .top-bar2 > .logo > a::after, .wrap > .top-bar2:hover > .logo > a::after {
+    opacity:1;
+}
+
+/* 사이드메뉴 */
+
+.wrap > .top-bar2 > .gnb > .gnb-menu {
+    right:1%;
+    top:15px;
+
+}
+
+.wrap > .top-bar2 > .gnb > .gnb-menu > ul > li {
+    padding-right:30px;
+}
+.wrap > .top-bar2 > .gnb > .gnb-menu > ul > li > a {
+    color:#dfdfdf;
+    font-weight:300;
+    font-size:14px;
+    position:relative;
+}
+.wrap > .top-bar2 > .gnb > .gnb-menu > ul > li:hover > a {
+    text-decoration:underline;
+}
+.wrap > .top-bar2:hover > .gnb > .gnb-menu > ul > li > a, html.not-scroll-top-0 .wrap > .top-bar2 > .gnb > .gnb-menu > ul > li > a {
+    color:#222222;
+}
+.wrap > .top-bar2 > .gnb > .gnb-menu > ul > li:nth-child(1) > a::after, .wrap > .top-bar2 > .gnb > .gnb-menu > ul > li:nth-child(2) > a::after, .wrap > .top-bar2 > .gnb > .gnb-menu > ul > li:nth-child(3) > a::after {
+    content:"·";
+    position:absolute;
+    top:0;
+    margin-left:10px;
+}
+.wrap > .top-bar2 > .gnb > .gnb-menu > ul > li:nth-child(4) > a::after {
+    content:"";
+    position:absolute;
+    background-color:#dfdfdf;
+    height:50%;
+    width:1px;
+    top:50%;
+    transform:translateY(-50%);
+    left:42px;
+}
+.wrap > .top-bar2:hover > .gnb > .gnb-menu > ul > li:nth-child(4) > a::after, html.not-scroll-top-0 .wrap > .top-bar > .gnb > .gnb-menu > ul > li:nth-child(4) > a::after {
+    background-color:#222222;
+}
+/* 상단 우측 버튼 */
+.wrap > .top-bar2 > .gnb > .btns {
+    top:0;
+}
+
+
+html.not-scroll-top-0 .wrap > .top-bar2 > .gnb > .btns >.search-btn::after, .wrap > .top-bar:hover > .gnb > .btns > .search-btn::after {
+    opacity:1;
+}
+
+html.not-scroll-top-0 .wrap .top-bar2 > .gnb > .btns >.allmenu-btn::after, .wrap .top-bar:hover > .gnb > .btns >.allmenu-btn::after {
+    opacity:1;
+}
+/* 상단 메뉴 끝 */
+/* 상단 서브메뉴시작 */
+.top-bar2 .menu-box-1 > ul > li > a {
+    padding:0 20px;
+    font-size:1.3rem;
+    letter-spacing:-0.1rem;
+    font-weight:bold;
+}
+
+.top-bar2 .menu-box-1 > ul > li:first-child > a {
+    padding-left:200px;
+}
+
+.top-bar2 .menu-box-1 > ul > li:last-child > a {
+    padding-right:200px;
+}
+
+@media ( max-width:1100px ) {
+    .top-bar2 .menu-box-1 > ul > li:first-child > a {
+        padding-left:50px;
+    }
+
+    .top-bar2 .menu-box-1 > ul > li:last-child > a {
+        padding-right:50px;
+    }
+}
+
+.top-bar2 .menu-box-1 > ul > li > a > span {
+    padding:10px 0;
+}
 /* 인디케이터 */
-.top-bar .menu-box-1 > .li-indicator-1-box > .li-indicator-1 {
+.top-bar2 .menu-box-1 > .li-indicator-1-box > .li-indicator-1 {
     position:absolute;
     top:4px;
     left:-700px;
     width:100px;
     height:2px;
-    background-color:#1A5BB1;
+    background-color:#d36913;
     transition:top 0.3s, left 0.3s, width 0.3s, height 0.3s;
-    z-index:100000;
+    z-index:1000000000000;
 }
 /* 컨텐트 박스, 서브메뉴 박스 */
-.top-bar .content-box {
+.top-bar2 .content-box {
     height:0;
     overflow:hidden;
     transition:height .5s;
     z-index:10000;
+    padding-left: 1000px;
 }
-.top-bar .content-box > ul > li {
+.top-bar2 .content-box > ul > li {
     display:none;
 }
-.top-bar:hover .content-box > ul > li.active {
+.top-bar2:hover .content-box > ul > li.active {
     display:block;
 }
-.top-bar .content-box > ul > li > .row > .cell:first-child {
-    width:350px;
+.top-bar2 .content-box > ul > li > .row > .cell:first-child {
+    width:100%;
+    
 }
-.top-bar .content-box > ul > li > .row > .cell:last-child {
+.top-bar2 .content-box > ul > li > .row > .cell:last-child {
     width:calc(100% - 350px);
     padding:40px 30px;
     background-color:#fff;
+    float: left;
 }
-.top-bar:hover .content-box > ul > li > .row > .cell:last-child > nav > ul > li {
+.top-bar2:hover .content-box > ul > li > .row > .cell:last-child > nav > ul > li {
     width:130px;
     height:165px;
     padding-right:20%;
     margin-bottom:60px;
     white-space:nowrap;
 }
-.top-bar .content-box > .left-bg {
-    width:350px;
-    background-color:#EBEDEF;
-    z-index:-1;
-}
 
-.top-bar .content-box > .left-bg > .img-1 {
-    margin-left:100px;
-    margin-bottom:-100px;
-}
   /* 컨텐트 박스 - 서브 메뉴 박스 */
   .content-box > .left-bg > img {
       z-index:10;
@@ -474,7 +632,7 @@ html.not-scroll-top-0 .wrap .top-bar > .gnb > .btns >.allmenu-btn::after, .wrap 
       opacity:1;
   }
   .page-1 {
-      background-image:url(https://www.komsco.com/popup/kor/visual/29fb7423-a9e1-47d3-828f-98735903d787.jpg);
+      background-image:url(../assets/fondo_header.jpg);
       background-repeat:no-repeat;
       background-size:cover;
   }
@@ -499,25 +657,40 @@ html.not-scroll-top-0 .wrap .top-bar > .gnb > .btns >.allmenu-btn::after, .wrap 
       position:absolute;
       top:34%;
       left:0;
-      margin-left:20px;
+      margin-left:120px;
   }
   .page-wrap .banner-txt .banner1-title {
-      font-family: 'Nanum Myeongjo', serif;
       font-size:54px;
       font-weight:900;
+      color: black;
       line-height:70px;
-      margin-top:20px;
+      margin-top: -90px;
       margin-bottom:40px;
+      line-height: 2;
   }
+
+  @media (max-width: 850px) {
+    .page-wrap .banner-txt .banner1-title {
+        font-size: 35px;
+        margin-left: -100px;
+        text-align: left;
+        margin-top: -125px;
+    }
+  }
+
   .page-wrap .banner-txt a {
-      border:solid rgba(255,255,255,0.5) 1px;
+      border:solid #000000 1px;
+      color: black;
       padding:10px 20px;
       display:inline-block;
-      transition:background .3s, color .3s;
+      transition:background .3s, #1b39bb .3s;
+      margin-left: 9px;
+      border-radius: 10px;
+      background: white;
   }
   .page-wrap .banner-txt a:hover {
-      background:rgba(255,255,255,0.8);
-      color:#444444;
+      background:rgba(211, 202, 202, 0.8);
+      color:#1b39bb;
   }
   .page-wrap .banner-txt .banner-top-txt {
       letter-spacing:9px;
@@ -525,7 +698,6 @@ html.not-scroll-top-0 .wrap .top-bar > .gnb > .btns >.allmenu-btn::after, .wrap 
   }
   .page-wrap .banner-txt .banner-title {
       font-size:80px;
-      font-family: 'Nanum Myeongjo', serif;
       margin:20px 0;
       letter-spacing:-1px;
       font-weight:600;
@@ -789,6 +961,7 @@ html.not-scroll-top-0 .wrap .top-bar > .gnb > .btns >.allmenu-btn::after, .wrap 
       height:170px;
       position:relative;
       border-bottom:#afafaf solid 1px;
+      text-align: center;
   }
   section > .news > .layout > .box-1  > .btn-more {
       background-image:url(https://www.komsco.com/images/site/kor/main/btn_more_bul.png);
@@ -822,7 +995,6 @@ html.not-scroll-top-0 .wrap .top-bar > .gnb > .btns >.allmenu-btn::after, .wrap 
   section > .news > .layout > .box-1 > .title > div::after {
       content:"";
       display:block;
-      background-image:url(https://www.komsco.com/images/site/kor/main/h3_title_ico.png);
       position:absolute;
       top:-20px;
       right:-20px;
@@ -883,7 +1055,7 @@ html.not-scroll-top-0 .wrap .top-bar > .gnb > .btns >.allmenu-btn::after, .wrap 
       width:24px;
       height:24px;
       background-image:url(https://www.komsco.com/images/site/kor/main/bodo_more.png);
-      background-repeata:no-repeat;
+      background-repeat:no-repeat;
       background-position:center 50%;
       background-size:cover;
       position:absolute;
@@ -985,6 +1157,7 @@ html.not-scroll-top-0 .wrap .top-bar > .gnb > .btns >.allmenu-btn::after, .wrap 
   /* page2 - 공지사항 */
   section .layout > .content-box {
       margin-top:120px;
+      box-sizing: border-box;
   }
   section .layout .notice {
       width:50%;
@@ -1407,7 +1580,6 @@ html.not-scroll-top-0 .wrap .top-bar > .gnb > .btns >.allmenu-btn::after, .wrap 
   section > .service > .layout > .title > div::after {
       content:"";
       display:block;
-      background-image:url(https://www.komsco.com/images/site/kor/main/h3_title_ico2.png);
       background-repeat: no-repeat;
       background-position: center 50%;
       top:-20px;
@@ -2056,166 +2228,342 @@ html.not-scroll-top-0 .wrap .top-bar > .gnb > .btns >.allmenu-btn::after, .wrap 
   /* link-banner 끝 */
   
   /* footer 1 */
-  .footer {
-      background-color:#111;
-      z-index:20;
-      padding:0 0 35px 0;
-      position:relative;
-  }
-  .footer::after {
-      content:"";
-      display:block;
-      width:100%;
-      height:1px;
-      background:#414141;
-      position:absolute;
-      left:0;
-      top:52px;
-  }
-  .footer > .layout {
-      
-      position:relative;
-      background-position:25.2604px 84px;
-      background-repeat:no-repeat;
-      padding:0 25.2604px 35px;
-  }
-  .footer > .layout > .menu {
-      padding:16px 0;
-      margin-bottom:25px;
-  }
-  .footer > .layout > .menu > ul > li:not(:first-child) {
-      padding-left:15px;
-      margin-left:15px;
-      position:relative;
-  }
-  .footer > .layout > .menu > ul > li:not(:first-child)::after {
-      content:"";
-      display: block;
-      width:1px;
-      height:12px;
-      background:#676767;
-      position:absolute;
-      left:0;
-      top:7px;
-  }
-  .footer > .layout > .menu > ul > li {
-      display:block;
-      color:#fff;
-      opacity:0.6;
-      font-size:14px;
-      transition:opacity .3s, text-decoration .3s;
-      cursor:pointer;
-  }
-  .footer > .layout > .menu > ul > li:hover {
-      opacity:0.8;
-      text-decoration:underline;
-  }
-  /* footer 2 */
-  .footer > .layout > .address, .footer > .layout > .copy {
-      color:#fff;
-      font-size:14px;
-      line-height:22px;
-      margin-left:185px;
-      opacity:0.5;
-  }
-  .footer > .layout > .address > div {
-      display:inline-block;
-  }
-  /* site-box - footer */
-  .footer > .layout > .site-box {
-      position:absolute;
-      color:#A4A4A4;
-      top:80px;
-      right:5%;
-  }
-  .footer > .layout > .site-box > .sns-link {
-      margin: 6px 15px 0 0;
-  }
-  .footer > .layout > .site-box > .sns-link > li > a {
-      background-color:#fff;
-      opacity:0.7;
-      border-radius:50%;
-      background-position:center 50%;
-      background-repeat:no-repeat;
-      background-size:100% auto;
-      box-sizing:border-box;
-      display:block;
-      width:26px;
-      height:26px;
-      margin-right:7px;
-  }
-  .footer > .layout > .site-box > .sns-link > .fb > a {
-      background-image:url(https://www.komsco.com/images/site/kor/layout/sns_link_ico2.png);
-  }
-  .footer > .layout > .site-box > .sns-link > .tw > a{
-      background-image:url(https://www.komsco.com/images/site/kor/layout/sns_link_ico1.png);
-  }
-  .footer > .layout > .site-box > .sns-link > .bl > a {
-      background-image:url(https://www.komsco.com/images/site/kor/layout/sns_link_ico4.png);
-  }
-  .footer > .layout > .site-box > .sns-link > .yt > a {
-      background-image:url(https://www.komsco.com/images/site/kor/layout/sns_link_ico3.png);
-  }
-  .footer > .layout > .site-box > .sns-link > .instar > a {
-      background-image:url(https://www.komsco.com/images/site/kor/layout/sns_link_ico5.png);
-  }
-  .footer > .layout > .site-box > .relate-site {
-      width:200px;
-      position:relative;
-  }
-  .footer > .layout > .site-box > .relate-site > .box-1 {
-      border:1px solid #595959;
-      line-height:38px;
-      color: #a4a4a4;
-      cursor:pointer;
-      padding:0 14px;
-      position:relative;
-  }
-  .footer > .layout > .site-box > .relate-site > .box-1::after {
-      content:"";
-      display:block;
-      background-image:url(https://www.komsco.com/images/site/kor/layout/relate_site_arrow.png);
-      background-repeat:no-repeat;
-      background-position:center 50%;
-      position:absolute;
-      top:50%;
-      margin-top:-5px;
-      right:7%;
-      width:18px;
-      height:11px;
-      transition:transform .4s;
-  }
-  .footer > .layout > .site-box > .relate-site > .box-1.active::after {
-      transform:rotate(-180deg);
-  }
-  .footer > .layout > .site-box > .relate-site > ul {
-      margin:0;
-      box-sizing:border-box;
-      border:1px solid #595959;
-      border-bottom:0;
-      position:absolute;
-      left:0;
-      bottom:37px;
-      z-index:200;
-      background:#2f2f2f;
-      width:100%;
-      max-height:0;
-      overflow:hidden;
-      transition:max-height .3s;
-  }
-  .footer > .layout > .site-box > .relate-site > ul > li {
-      padding:10px 5px;
-      border-bottom:1px solid #595959;
-  }
-  .footer > .layout > .site-box > .relate-site > .box-1.active + ul {
-      display:block;
-      max-height:210px;
-  }
+  .footer{
+    background-color: #111;
+    background-size: cover;
+    
+    z-index: -1;
+}
+
+.footer__title{
+    width: 400px;
+       font-size: 50px;
+    
+}
+
+.footer__title, .footer__newsletter{
+    color: rgb(255, 255, 255);
+}
+
+
+.footer__container{
+    display: flex;
+    width: 100%;
+    
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 90px;
+}
+
+.nav--footer{
+    padding-bottom: 10px;
+    display: grid;
+    gap: 1em;
+    grid-auto-flow: row;
+    height: 100%;
+}
+
+.footerinfo{
+    font-size: 20px;
+    color: white;
+}
+
+.nav__link--footer{
+    color: white;
+    display: flex;
+    margin: 0;
+    margin-right: 20px;
+    flex-wrap: wrap;
+}
+
+.footer__inputs{
+    margin-top: 10px;
+    
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer__input{
+    background-color: #fff;
+    height: 50px;
+    display: block;
+    padding-left: 10px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    margin-right: 16px;
+}
+
+.footer__submit{
+    margin-left: auto;
+    display: inline-block;
+    height: 50px;
+    padding: 0 20px ;
+    background-color: red;
+    border: none;
+    font-size: 1rem;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.footer__copy{
+    --padding-container: 30px 0;
+    text-align: center;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.footer__copyright{
+    font-weight: 300;
+}
+
+.footer__icons{
+    margin-bottom: 10px;
+}
+
+.footer__img{
+    width: 30px;
+}
+/*************footer End*****************/
+
+@media (max-width:800px){
+    
+
+    .footer__container{
+        flex-wrap: wrap;
+    }
+
+    .nav--footer{
+        width: 100%;
+        justify-items: center;
+    }
+
+    .nav__link--footer{
+        width: 100%;
+        justify-content: space-evenly;
+        margin: 0;
+    }
+
+    .footer__form{
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .footer__input{
+        flex: 1;
+    }
+
+}
+
+@media (max-width:600px){
+   
+    .footer__title{
+        justify-self: start;
+        margin-bottom: 15px;
+    }
+
+    .nav--footer{
+        padding-bottom: 60px;
+    }
+
+    .nav__link--footer{
+        justify-content: space-between;
+    }
+
+    .footer__inputs{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer__input{
+        flex-basis: 100%;
+        margin: 0;
+        margin-bottom: 16px;
+    }
+
+    .footer__submit{
+        margin-right: auto;
+        margin-left: 0;
+        
+
+        /* 
+        margin:0;
+        width: 100%;
+        */
+    }
+}
+
   
   /* 임시 */
   .layout {
       padding:0 20px;
   }
   
-  /* 우측 메뉴 팝업 */
-  .gnb > .all-menu{}
+
+
+  .container {
+    width: 100%;
+    display: flex;
+    max-width: 100%;
+    margin-top: -80px;
+  }
+
+  @media (max-width:1020px) {
+    .container {
+        flex-wrap: wrap;
+    }
+  }
+
+  .card {
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+  }
+
+  .card:hover {
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-2%);
+  }
+
+  .card img {
+    width: 100%;
+    height: 210px;
+    border-radius: 5px;
+  }
+
+  .card .contenido {
+    padding: 15px;
+    text-align: center;
+  }
+
+  .card .contenido p {
+    line-height: 1.5;
+    color: #6a6a6a;
+  }
+
+  .card .contenido h3 {
+    font-weight: 400;
+    margin-bottom:  15px;
+  }
+    
+  .card .contenido a {
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    color: #1b39bb;
+    border: 1px solid #1b39bb;
+    border-radius: 4px;
+    transition: all 400ms ease;
+  }
+
+  .card .contenido a:hover{
+    background: #1b39bb;
+    color: white;
+  }
+
+  .cardizquierda img {
+    width: 751px;
+    height: 600px;
+  }
+
+  @media (max-width:850px) {
+    .cardizquierda img {
+        width: 100%;
+        height: 100%;
+    }
+  }
+
+  .carderecha {
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+  }
+
+  .carderecha h3 {
+    padding: 50px;
+    font-size: 25px;
+  }
+
+  .carderecha p {
+    margin-top: -50px;
+    padding: 0px 50px;
+    font-size: 15px;
+  }
+
+  .carderecha .pderecha {
+    padding: 0px 50px;
+    font-size: 18px;
+    margin-bottom: 80px;
+  }
+
+  @media (max-width:1270px) {
+    .carderecha {
+        width: 100%;
+        margin: 30px;
+        border-radius: 6px;
+        overflow: hidden;
+        background: white;
+        box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+        cursor: default;
+        transition: all 400ms ease;
+    }
+
+    .carderecha h3 {
+        padding: 16px 20px;
+        font-size: 20px;
+      }
+
+      .carderecha .pderecha {
+        padding: 20px;
+        font-size: 15px;
+        margin-bottom: 25px;
+      }
+
+      .carderecha p {
+        padding: 20px;
+        font-size: 12px;
+      }
+  }
+
+   .containercipsur {
+    width: 100%;
+    display: flex;
+    max-width: 100%;
+    margin-top: -80px;
+    margin-bottom: 50px;
+   }
+
+   .containercipsur img {
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+   }
+
+   @media (max-width:1020px) {
+    .containercipsur {
+        flex-wrap: wrap;
+    }
+  }
+
+  
+

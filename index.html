@@ -1,34 +1,31 @@
-<html lang="en" data-current-page-index="0" class=""><head>
+<!DOCTYPE html>
+<html lang="es">
+
+
+<head>
     <meta charset="UTF-8">
-    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
   
-      <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
-  
-      <meta name="apple-mobile-web-app-title" content="CodePen">
-  
-      <link rel="shortcut icon" type="image/x-icon" href="/assets/logo.png">
-  
-      <link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg" color="#111">
-  
+      <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.png">
       <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
   
       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <title>Perupack</title>
-  
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="canonical" href="https://codepen.io/ji-hye-oh/pen/VwPNByX">
 
     <link rel="stylesheet" href="./Design/style.css">
-  
-    <script>
-    window.console = window.console || function(t) {};
-  </script>
+    <link rel="stylesheet" href="./Design/icons.css">
   
     
     
   </head>
   
   <body translate="no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <!-- 제이쿼리 불러오기 -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   
@@ -45,22 +42,22 @@
   <ul id="page-nav">
       <li class="active">
           <a href="#page1">
-              <div>Introduccion</div>
+              <div>Inicio</div>
           </a>
       </li>
       <li class="">
           <a href="#page2">
-              <div>Noticias</div>
+              <div>Marcas</div>
           </a>
       </li>
       <li class="">
           <a href="#page3">
-              <div>Productos</div>
+              <div>Sectores</div>
           </a>
       </li>
       <li class="">
           <a href="#page4">
-              <div>Marcas</div>
+              <div>Nosotros</div>
           </a>
       </li>
       <li class="">
@@ -74,96 +71,58 @@
   <section>
       <!-- 상단메뉴 + page1 배너 -->
       <div class="sec-page wrap" id="page1" data-offset-top="0">
+        <div class="mobile-menu">
+            <ul>
+                <p>Central de ventas:  <img src="./assets/wsp.svg" alt="" class="logowsp" height="30px" width="30px"> +51 947 404 154</p>
+            </ul>  
+            
+        </div>
+
+        
           <!--모바일 상단메뉴-->
-          <div class="mobile-menu-bar relative">
-              
+          <div class="mobile-menu-bar">
+            <div class="logo"><a href="#"><img src="./assets/logoheader.png" width=200px></a></div>
+           
               <div class="btns absolute-right">
-                  <a href="#" class="search-btn"></a>
+                  
                   <a href="#" class="allmenu-btn"></a>
               </div>
           </div>
           <!--윈도우 상단메뉴-->
-          <div class="top-bar text-align-center">
-              <div class="logo"><a href="#"></a></div>
-  
-              <nav class="menu-box-1 inline-block">
-                  <ul class="row">
-                      <li class="cell"><a href="#" class="block"><span class="inline-block">Nosotros</span></a></li>
-                      <li class="cell"><a href="#" class="block"><span class="inline-block">Productos</span></a></li>
-                      <li class="cell"><a href="#" class="block"><span class="inline-block">Historia</span></a></li>
-                      
-                      <li class="cell"><a href="#" class="block"><span class="inline-block">Innovacion</span></a></li>
-                      <li class="cell"><a href="#" class="block"><span class="inline-block">Marcas</span></a></li>
-                      <li class="cell"><a href="#" class="block"><span class="inline-block">Contactanos</span></a></li>
-                  </ul>
-                  <div class="li-indicator-1-box relative">
-                      <div class="li-indicator-1" style="width: 67.207px;"></div>
-                  </div>
-              </nav>
-
-
-              <div class="gnb row">
-                <div class="gnb-menu absolute-right">
-                    <ul class="row">
-                        <li class="mobile-gift cell"><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque non ad quasi nisi architecto, quas dolore harum velit repellendus rerum ea quod nemo illum ipsum mollitia? Quisquam expedita nesciunt dolores!</a></li>
-                        <li class="shopping cell"><a href="#">info</a></li>
-                        <li class="meseum cell"><a href="#">info</a></li>
-                        <li class="eng cell"><a href="#">info</a></li>
-                        <li class="login cell"><a href="#">info</a></li>
-                    </ul>   
-                </div>
-                <div class="btns absolute-right">
-                    
-                    <a href="#" class="allmenu-btn"></a>
-                </div>
-            </div>
-          </div>
-  
           
+          <div class="infoheader text-align-center">
+                    <ul class="info">
+                        <p>Central de ventas: <img src="./assets/wsp.svg" alt="" class="logowsp" width="20px" height="20px"> +51 947 404 154</p>
+                    </ul>   
+          </div>
+
+          
+          <div class="top-bar2 text-align-center">
+            <div class="logo"><a href="#"><img src="./assets/logoheader.png" width=200px></a></div>
+            <nav class="menu-box-1 inline-block">
+                <ul class="row">
+                   
+                    <li class="cell"><a href="#page2" class="block"><span class="inline-block">Marcas</span></a></li>
+                    <li class="cell"><a href="#page3" class="block"><span class="inline-block">Productos</span></a></li>
+                    <li class="cell"><a href="#page4" class="block"><span class="inline-block">Nosotros</span></a></li>
+                    <li class="cell"><a href="#" class="block"><span class="inline-block">Contacto</span></a></li>
+                </ul>
+                <div class="li-indicator-1-box relative">
+                    <div class="li-indicator-1" style="width: 67.207px;"></div>
+                </div>
+            </nav>
+          </div>
           <div class="page-wrap" data-autoplay="Y">
               <section class="page page-1 active">
                   <div class="banner-txt con">
-                      <div class="banner-top-txt">PERUPACK<br>SLIDE1</div>
-                      <div class="banner1-title">Perupack-slide1<br>Perupack-slide1</div>
-                      <a href="#">Perupack-slide1</a>
+                      
+                      <div class="banner1-title">Desarrollamos<br>Productos que<br>hacen la vida un<br>poco mas facil</div>
+                      <a href="#">e-commerce</a>
                   </div>
               </section>
-              <section class="page page-2">
-                  <div class="banner-txt">
-                      <div class="banner-top-txt">Perupack-slide2</div>
-                      <div class="banner-title">100-<div class="gold">1</div>=0</div>
-                      <div class="banner-content1">Perupack-slide2</div>
-                      <div class="banner-content2">Perupack-slide2<br>Perupack-slide2</div>
-                  </div>
-              </section>
-              <section class="page page-3">
-                  <div class="banner-txt">
-                      <div class="banner-top-txt">Perupack-slide3</div>
-                      <div class="banner-title">
-                          NO.<div class="gold">1</div></div>
-                      <div class="banner-content1">Perupack-slide3</div>
-                      <div class="banner-content2">Perupack-slide1<br>Perupack-slide1</div>
-                  </div>
-              </section>
-              <section class="page page-4">
-                  <div class="banner-txt">
-                      <div class="banner-top-txt">Perupack-slide4</div>
-                      <div class="banner-title">Perupack-slide4</div>
-                      <div class="banner-content1">Perupack-slide4</div>
-                      <div class="banner-content2">Perupack-slide4<br>Perupack-slide4</div>
-                  </div>
-              </section>
+              
   
-              <div class="page-btns">
-                  <div class="active"></div>
-                  <div class=""></div>
-                  <div class=""></div>
-                  <div class=""></div>
-                  <span class="play-btns">
-                      <a class="stop" href="#" onclick="return false"><img src="https://www.komsco.com/images/site/kor/main/visual_control_play.png" alt=""></a>
-                      <a class="play" href="#" onclick="return false"><img src="https://www.komsco.com/images/site/kor/main/visual_control_stop.png" alt=""></a>
-                  </span>
-              </div>
+              
   
               
   
@@ -171,390 +130,301 @@
           </div>
       </div>
       <!-- page 2 (News) -->
-      <div class="sec-page news" id="page2" data-offset-top="570"  data-aos="fade-up">
+      <div class="sec-page news" id="page2" data-offset-top="570"  data-aos="fade-up" data-aos-duration="1500">
           <div class="layout con">
               <div class="box-1">
                   <h3 class="title">
-                      Ultimas
+                      Nuestras
                       <div>
-                          noticias
+                          Marcas
                       </div>
                   </h3>
-                  <div class="btn-more"></div>
               </div>
-              <div class="news-slider">
-                  <div class="news-slides">
-                      <ul>
-                          <li class="active">
-                              <ul class="row">
-                                  <li class="cell">
-                                      <div class="txt">
-                                          <div class="date">Fecha</div>
-                                          <div class="content">Noticia 1</div>
-                                      </div>
-                                      <div class="photo">
-                                          <div class="img-box" style="background-image:url(https://www.komsco.com/attach/image/233dff0f38e21aa6c4bc92fe17dbb823/order/first)">
-                                          </div>
-                                      </div>
-                                  </li>
-                                  <li class="cell">
-                                      <div class="txt">
-                                          <div class="date">Fecha</div>
-                                          <div class="content">Noticia 2</div>
-                                      </div>
-                                      <div class="photo">
-                                          <div class="img-box" style="background-image:url(https://www.komsco.com/attach/image/915c31352886a2f43abc929093d6fe0b/order/first)">
-                                          </div>
-                                      </div>
-                                  </li>
-                                  <li class="cell">
-                                      <div class="txt">
-                                          <div class="date">Fecha</div>
-                                          <div class="content">Noticia 3</div>
-                                      </div>
-                                      <div class="photo"><div class="img-box" style="background-image:url(https://www.komsco.com/attach/image/36bf3b52c910c37d290431178cc9e66a/order/first)"></div></div>
-                                  </li>
-                              </ul>
-                          </li>
-                          <li>
-                              <ul class="row">
-                                  <li class="cell">
-                                      <div class="txt">
-                                          <div class="date">Fecha</div>
-                                          <div class="content">Noticia 4</div>
-                                      </div>
-                                      <div class="photo"><div class="img-box" style="background-image:url(https://www.komsco.com/attach/image/b31d034bce660bed8f014159976664ca/order/first)"></div></div>
-                                  </li>
-                                  <li class="cell">
-                                      <div class="txt">
-                                          <div class="date">Fecha</div>
-                                          <div class="content">Noticia 5</div>
-                                      </div>
-                                      <div class="photo"><div class="img-box" style="background-image:url(https://www.komsco.com/attach/image/6c1e79a020f953503412dbc73d37b6c6/order/first)"></div></div>
-                                  </li>
-                                  <li class="cell">
-                                      <div class="txt">
-                                          <div class="date">Fecha</div>
-                                          <div class="content">Noticia 6</div>
-                                      </div>
-                                      <div class="photo"><div class="img-box" style="background-image:url(https://www.komsco.com/attach/image/4a7ccfaeb48c25415f856e65dafc1e3b/order/first)"></div></div>
-                                  </li>
-                              </ul>
-                          </li>
-                      </ul>
-                  </div>
-                  <div class="page-btns">
-                      <div class="active"></div>
-                      <div></div>
-                  </div>
-              </div>
-              <div class="content-box row"  data-aos="fade-up">
-                  <div class="notice cell">
-                      <div class="box-1">
-                          <h4>Lanzamientos</h4>
-                          <ul>
-                              <li>
-                                  <div class="subject"><a href="#">Lanzamiento 1</a></div>
-                                  <div class="date">Fecha</div>
-                              </li>
-                              <li>
-                                  <div class="subject"><a href="#">Lanzamiento 2</a></div>
-                                  <div class="date">Fecha</div>
-                              </li>
-                              <li>
-                                  <div class="subject"><a href="#">Lanzamiento 3</a></div>
-                                  <div class="date">Fecha</div>
-                              </li>
-                              <li>
-                                  <div class="subject"><a href="#">Lanzamiento 4</a></div>
-                                  <div class="date">Fecha</div>
-                              </li>
-                          </ul>
-                      </div>
-                  </div>
-                  <div class="letter cell" >
-                      <div class="box-1">
-                          <h4>
-                              Socios
-                              <div>Socio</div>
-                          </h4>
-                          <a href="" class="btn-more"></a>
-                          <div class="list">
-                              <div class="img-box" href="#">
-                                  <img src="https://www.komsco.com/attach/image/8c9f31511ae37abd68b2fc779789f243/order/first" alt="">
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="job cell">
-                      <div class="box-1">
-                          <div>
-                              <h4>Valores</h4>
-                              <div class="list">
-                                  <div class="title">Valores</div>
-                                  <div class="infor">
-                                      <div>
-                                          <span>Valor</span>
-                                          Valor
-                                      </div>
-                                      <div>
-                                          <span>Valor</span>
-                                          Valor
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="content-box-1 row"  data-aos="fade-up">
-                  <div class="popup cell">
-                      <div class="box-1">
-                          <div class="slider" data-autoplay="Y">
-                              <div class="box-1">
-                                  <div class="page-btns">
-                                      <div class=""></div>
-                                      <div class=""></div>
-                                      <div class=""></div>
-                                      <div class=""></div>
-                                      <div class="active"></div>
-                                      <a href="#" onclick="return false;" class="btn-play"></a>
-                                      <a href="#" onclick="return false;" class="btn-stop"></a>
-                                  </div>
-                              </div>
-                              <div class="slides">
-                                  <div class="img-box" style="background-image:url(https://www.komsco.com/popup/kor/base/fbecefc8-e28e-412a-966a-daec31f4c0bc.jpg);"></div>
-                                  <div class="img-box" style="background-image:url(https://www.komsco.com/popup/kor/base/5739f4f7-a3b9-4c9c-a211-de59649fc1a5.jpg);"></div>
-                                  <div class="img-box" style="background-image:url(https://www.komsco.com/popup/kor/base/ad60dc7f-a978-4f29-9f62-2836a3f9f010.jpg);"></div>
-                                  <div class="img-box" style="background-image:url(https://www.komsco.com/popup/kor/base/71758d6c-0a91-47fc-8e2a-2a3588d60cc8.jpg);"></div>
-                                  <div class="img-box active" style="background-image:url(https://www.komsco.com/popup/kor/base/e8664aaa-292b-48b0-bdac-23dfd0dd4258.jpg);"></div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="video cell">
-                      <div class="box-1">
-                          <a href="https://www.youtube.com/shorts/QlGFHALJjeQ?feature=share">
-                              <div class="img-box" style="background-image:url()">
-                              </div>
-                          </a>
-                      </div>
-                  </div>
-              </div>
+              
+              <div class="questions__offerautos">
+                
+                <div class="barraautos">
+                    <div class="marcaautos">
+                        <img src="./assets/favicon.png">
+                    </div>
+                    <div class="marcaautos">
+                        <img src="./assets/favicon.png">
+                    </div>
+                    <div class="marcaautos">
+                        <img src="./assets/favicon.png">
+                    </div>
+                    <div class="marcaautos">
+                        <img src="./assets/favicon.png">
+                    </div>
+                    <div class="marcaautos">
+                        <img src="./assets/favicon.png">
+                    </div>
+                    <div class="marcaautos">
+                        <img src="./assets/favicon.png">
+                    </div>
+                    <div class="marcaautos">
+                        <img src="./assets/favicon.png">
+                    </div>
+                    <div class="marcaautos">
+                        <img src="./assets/favicon.png">
+                    </div>
+                    <div class="marcaautos">
+                        <img src="./assets/favicon.png">
+                    </div>
+                    <div class="marcaautos">
+                        <img src="./assets/perupackblanco.png">
+                    </div>
+        
+                    
+
+                    <div class="marcaautos">
+                        <img src="./assets/favicon.png">
+                    </div>
+                    <div class="marcaautos">
+                        <img src="./assets/favicon.png">
+                    </div>
+                    <div class="marcaautos">
+                        <img src="./assets/favicon.png">
+                    </div>
+                    <div class="marcaautos">
+                        <img src="./assets/favicon.png">
+                    </div>
+                    <div class="marcaautos">
+                        <img src="./assets/favicon.png">
+                    </div>
+                    <div class="marcaautos">
+                        <img src="./assets/favicon.png">
+                    </div>
+                    <div class="marcaautos">
+                        <img src="./assets/favicon.png">
+                    </div>
+                    <div class="marcaautos">
+                        <img src="./assets/favicon.png">
+                    </div>
+                    <div class="marcaautos">
+                        <img src="./assets/favicon.png">
+                    </div>
+                    <div class="marcaautos">
+                        <img src="./assets/perupackblanco.png">
+                    </div>
+                    
+                </div>
+            </div>
           </div>
       </div>
-      <!-- page 3 (service) -->
-      <div class="sec-page service" id="page3" data-offset-top="1944.23828125"  data-aos="fade-up">
-          <div class="layout con">
-              <div class="title">
-                  Ultimos
-                  <div>Productos</div>
+      <!-- page 3 -->
+      <div class="sec-page news" id="page3" data-offset-top="570"  data-aos="fade-up" data-aos-duration="1500">
+        <div class="layout con">
+            <div class="box-1">
+                <h3 class="title">
+                    Sectores que
+                    <div>
+                        Atendemos
+                    </div>
+                </h3>
+            </div>
+            
+            <div class="content-box row"  data-aos="fade-up" data-aos-duration="1500">
+               
+              <div class="container">
+                <div class="card">
+                    <figure>
+                        <img src="assets/fondo_header.jpg">
+                    </figure>
+                    <div class="contenido">
+                        <h3>Foodservice</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto porro excepturi molestiae ut. Aut beatae necessitatibus quis maiores at, nulla consequatur recusandae earum vero nam culpa possimus voluptatem dolorem reprehenderit.</p>
+                        <a href="#">Catalogo</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <figure>
+                        <img src="assets/fondo_header.jpg">
+                    </figure>
+                    <div class="contenido">
+                        <h3>Industrial y Agro</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto porro excepturi molestiae ut. Aut beatae necessitatibus quis maiores at, nulla consequatur recusandae earum vero nam culpa possimus voluptatem dolorem reprehenderit.</p>
+                        <a href="#">Catalogo</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <figure>
+                        <img src="assets/fondo_header.jpg">
+                    </figure>
+                    <div class="contenido">
+                        <h3>Home Decor</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto porro excepturi molestiae ut. Aut beatae necessitatibus quis maiores at, nulla consequatur recusandae earum vero nam culpa possimus voluptatem dolorem reprehenderit.</p>
+                        <a href="#">Catalogo</a>
+                    </div>
+                </div>
               </div>
-              <div class="content con">
-                  <div class="row">
-                      <div class="cell">
-                          <div class="suggest-box card-box card-box-type-1">
-                              <div class="txt">
-                                  <span>
-                                      Producto
-                                  </span>
-                                  
-                              </div>
-                              <ul>
-                                  <li>Carac</li>
-                                  <li>Carac</li>
-                                  <li>Carac</li>
-                                  <li>Carac</li>
-                              </ul>
-                          </div>
-                      </div>
-                      <div class="cell">
-                          <nav class="link-box-1">
-                              <ul class="row">
-                                  <li class="cell">
-                                      <div>
-                                          <span class="name">
-                                              <div>Producto</div>
-                                          </span>
-                                      </div>
-                                  </li>
-                                  <li class="cell">
-                                      <div>
-                                          <span class="name">
-                                              <div>Producto</div>
-                                          </span>
-                                      </div>
-                                  </li>
-                                  <li class="cell">
-                                      <div>
-                                          <span class="name">
-                                              <div>Producto</div>
-                                          </span>
-                                      </div>
-                                  </li>
-                                  <li class="cell">
-                                      <div>
-                                          <span class="name">
-                                              <div>Producto</div>
-                                          </span>
-                                      </div>
-                                  </li>
-                                  <li class="cell">
-                                      <div>
-                                          <span class="name">
-                                              <div>Producto</div>
-                                          </span>
-                                      </div>
-                                  </li>
-                              </ul>
-                          </nav>
-                          <nav class="link-box-2">
-                              <ul class="row">
-                                  <li class="cell">
-                                      <div class="customer-box card-box card-box-type-2">
-                                          <a href="#">
-                                              <span class="name">
-                                                  <div class="title">Producto</div>
-                                                  <div>Producto</div>
-                                                  <div>Producto</div>
-                                              </span>
-                                          </a>
-                                          <ul>
-                                              <li><a href="#" onclick="return false;">Producto</a></li>
-                                              <li><a href="#" onclick="return false;">Producto</a></li>
-                                          </ul>
-                                      </div>
-                                  </li>
-                                  <li class="cell hidden-on-xs-down">
-                                      <div class="card-news-box card-box card-box-type-1">
-                                          <a href="#">
-                                              <span class="name">
-                                                  <div class="title">Producto</div>
-                                                  <div>Producto</div>
-                                                  <div>Producto</div>
-                                              </span>
-                                          </a>
-                                      </div>
-                                  </li>
-                                  <li class="cell hidden-on-xs-down">
-                                      <div class="search-employee-box card-box card-box-type-1">
-                                          <a href="#">
-                                              <span class="name">
-                                                  <div class="title">Producto</div>
-                                                  <div>Producto </div>
-                                                  <div>Producto</div>
-                                              </span>
-                                          </a>
-                                      </div>
-                                  </li>
-                              </ul>
-                          </nav>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
+               
+            </div>
+        </div>
+    </div>
       
-      <!-- page 5 -->
-      <div class="sec-page management" id="page5" data-offset-top="3357.44140625"  data-aos="fade-up">
-          <div class="layout con row">
-              <div class="cell">
-                  <div class="title">
-                      Nuestras
-                      <span>
-                          Marcas
-                      </span>
-                  </div>
-                  <div class="content">
-                      Perupack<br>Se asocia con distintas marcas
-                  </div>
-              </div>
-              <div class="cell">
-                  <ul class="row">
-                      <li class="cell">
-                          <div class="subject">Geopacking</div>
-                          <div>Geopacking</div>
-                          <div class="txt-box">Geopacking</div>
-                      </li>
-                      <li class="cell">
-                          <div class="subject">Cipsur</div>
-                          <div>Cipsur</div>
-                          <div class="txt-box">Cipsur</div>
-                      </li>
-                      <li class="cell">
-                          <div class="subject">PosteaLab</div>
-                          <div>PosteaLab</div>
-                          <div class="txt-box">PosteaLab</div>
-                      </li>
-                      <li class="hidden cell">
-                          <div class="txt-box">사회공헌</div>
-                      </li>
-                      <li class="hidden cell">
-                          <div class="txt-box">윤리경영</div>
-                      </li>
-                      <li class="hidden cell">
-                          <div class="txt-box">동반성장</div>
-                      </li>
-                  </ul>
-              </div>
-          </div>
-      </div>
+      <!-- page 4 -->
+      <div class="sec-page news" id="page4" data-offset-top="570"  data-aos="fade-up" data-aos-duration="1500">
+        <div class="layout con">
+            <div class="box-1">
+                <h3 class="title">
+                    <div>
+                        Perupack
+                    </div>
+                    en un vistazo
+                </h3>
+            </div>
+            
+            <div class="content-box row"  data-aos="fade-up" data-aos-duration="1500">
+                <div class="container">
+                    <div class="cardizquierda">
+                        <figure>
+                            <img src="assets/grafico1.png">
+                        </figure>
+                    </div>
+                    <div class="carderecha">
+                        <div class="contenido">
+                            <h3>MISION</h3>
+                            <p class="pderecha">Perupack es una empresa</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto porro excepturi molestiae ut. Aut beatae necessitatibus quis maiores at, nulla consequatur recusandae earum vero nam culpa possimus voluptatem dolorem reprehenderit.</p>
+                        </div>
+                    </div>
+                  </div>   
+            </div>
+            <div class="content-box row"  data-aos="fade-up" data-aos-duration="1500">
+                <div class="container">
+                    <div class="cardizquierda">
+                        <figure>
+                            <img src="assets/grafico2.png">
+                        </figure>
+                    </div>
+                    <div class="carderecha">
+                        <div class="contenido">
+                            <h3>VISION</h3>
+                            <p class="pderecha">Perupack es una empresa</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto porro excepturi molestiae ut. Aut beatae necessitatibus quis maiores at, nulla consequatur recusandae earum vero nam culpa possimus voluptatem dolorem reprehenderit.</p>
+                        </div>
+                    </div>
+                  </div>   
+            </div>
+
+            <div class="box-1">
+                <h3 class="title">
+                    <div>
+                        Somos
+                    </div>
+                    parte de
+                </h3>
+            </div>
+
+            <div class="content-box row"  data-aos="fade-up" data-aos-duration="1500">
+                <div class="containercipsur">
+                    <div class="cardizquierda">
+                        <figure>
+                            <img src="assets/cipsur.png">
+                        </figure>
+                    </div>
+                    <div class="carderecha">
+                        <div class="contenido">
+                            <h3>Lala</h3>
+                            <p class="pderecha">Perupack es una empresa</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto porro excepturi molestiae ut. Aut beatae necessitatibus quis maiores at, nulla consequatur recusandae earum vero nam culpa possimus voluptatem dolorem reprehenderit.</p>
+                        </div>
+                    </div>
+                  </div>   
+            </div>
+        </div>
+    </div>
   </section>
   
   <!-- link banner -->
-  <div class="link-banner con">
-      <div class="link-slider">
-          <div class="slides">
-              <ul class="row slick slick-initialized slick-slider"><div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 45000px; transform: translate3d(-1150px, 0px, 0px);"><div class="slick-slide slick-cloned" data-slick-index="-5" aria-hidden="true" tabindex="-1"><div><li class="cell" style="width: 100%; display: inline-block;"><img src="https://www.komsco.com/popup/kor/banner/c7519b94-17b3-4bc3-b747-0d9e4d34cb26.jpg" alt=""></li></div></div><div class="slick-slide slick-cloned" data-slick-index="-4" aria-hidden="true" tabindex="-1"><div><li class="cell" style="width: 100%; display: inline-block;"><img src="https://www.komsco.com/popup/kor/banner/a84bd6f3-c69e-4015-b914-ce71e676e5f7.jpg" alt=""></li></div></div><div class="slick-slide slick-cloned" data-slick-index="-3" aria-hidden="true" tabindex="-1"><div><li class="cell" style="width: 100%; display: inline-block;"><img src="https://www.komsco.com/popup/kor/banner/db86dcd8-5eca-42d0-95ca-3e485f27067f.jpg" alt=""></li></div></div><div class="slick-slide slick-cloned" data-slick-index="-2" aria-hidden="true" tabindex="-1"><div><li class="cell" style="width: 100%; display: inline-block;"><img src="https://www.komsco.com/popup/kor/banner/920acb80-4c8e-4f2f-ac6b-df06637a6f8c.jpg" alt=""></li></div></div><div class="slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" tabindex="-1"><div><li class="cell" style="width: 100%; display: inline-block;"><img src="https://www.komsco.com/popup/kor/banner/2d3efb12-3660-46cd-b314-eb3b42b42cd4.jpg" alt=""></li></div></div><div class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false"><div><li class="cell" style="width: 100%; display: inline-block;"><img src="https://www.komsco.com/popup/kor/banner/bbd5c67c-9df0-4316-aec3-0e4a682eaa4c.jpg" alt=""></li></div></div><div class="slick-slide slick-active" data-slick-index="1" aria-hidden="false"><div><li class="cell" style="width: 100%; display: inline-block;"><img src="https://www.komsco.com/popup/kor/banner/d8c1aa1f-06b7-4ad7-8036-d744d38e048d.jpg" alt=""></li></div></div><div class="slick-slide slick-active" data-slick-index="2" aria-hidden="false"><div><li class="cell" style="width: 100%; display: inline-block;"><img src="https://www.komsco.com/popup/kor/banner/27eb6aa1-78cf-4691-a9d8-143a0943355e.jpg" alt=""></li></div></div><div class="slick-slide slick-active" data-slick-index="3" aria-hidden="false"><div><li class="cell" style="width: 100%; display: inline-block;"><img src="https://www.komsco.com/popup/kor/banner/3fb7c857-3c88-4b6e-8166-2f36f115cbdd.jpg" alt=""></li></div></div><div class="slick-slide slick-active" data-slick-index="4" aria-hidden="false"><div><li class="cell" style="width: 100%; display: inline-block;"><img src="https://www.komsco.com/popup/kor/banner/c7519b94-17b3-4bc3-b747-0d9e4d34cb26.jpg" alt=""></li></div></div><div class="slick-slide" data-slick-index="5" aria-hidden="true" tabindex="-1"><div><li class="cell" style="width: 100%; display: inline-block;"><img src="https://www.komsco.com/popup/kor/banner/a84bd6f3-c69e-4015-b914-ce71e676e5f7.jpg" alt=""></li></div></div><div class="slick-slide" data-slick-index="6" aria-hidden="true" tabindex="-1"><div><li class="cell" style="width: 100%; display: inline-block;"><img src="https://www.komsco.com/popup/kor/banner/db86dcd8-5eca-42d0-95ca-3e485f27067f.jpg" alt=""></li></div></div><div class="slick-slide" data-slick-index="7" aria-hidden="true" tabindex="-1"><div><li class="cell" style="width: 100%; display: inline-block;"><img src="https://www.komsco.com/popup/kor/banner/920acb80-4c8e-4f2f-ac6b-df06637a6f8c.jpg" alt=""></li></div></div><div class="slick-slide" data-slick-index="8" aria-hidden="true" tabindex="-1"><div><li class="cell" style="width: 100%; display: inline-block;"><img src="https://www.komsco.com/popup/kor/banner/2d3efb12-3660-46cd-b314-eb3b42b42cd4.jpg" alt=""></li></div></div><div class="slick-slide slick-cloned" data-slick-index="9" aria-hidden="true" tabindex="-1"><div><li class="cell" style="width: 100%; display: inline-block;"><img src="https://www.komsco.com/popup/kor/banner/bbd5c67c-9df0-4316-aec3-0e4a682eaa4c.jpg" alt=""></li></div></div><div class="slick-slide slick-cloned" data-slick-index="10" aria-hidden="true" tabindex="-1"><div><li class="cell" style="width: 100%; display: inline-block;"><img src="https://www.komsco.com/popup/kor/banner/d8c1aa1f-06b7-4ad7-8036-d744d38e048d.jpg" alt=""></li></div></div><div class="slick-slide slick-cloned" data-slick-index="11" aria-hidden="true" tabindex="-1"><div><li class="cell" style="width: 100%; display: inline-block;"><img src="https://www.komsco.com/popup/kor/banner/27eb6aa1-78cf-4691-a9d8-143a0943355e.jpg" alt=""></li></div></div><div class="slick-slide slick-cloned" data-slick-index="12" aria-hidden="true" tabindex="-1"><div><li class="cell" style="width: 100%; display: inline-block;"><img src="https://www.komsco.com/popup/kor/banner/3fb7c857-3c88-4b6e-8166-2f36f115cbdd.jpg" alt=""></li></div></div><div class="slick-slide slick-cloned" data-slick-index="13" aria-hidden="true" tabindex="-1"><div><li class="cell" style="width: 100%; display: inline-block;"><img src="https://www.komsco.com/popup/kor/banner/c7519b94-17b3-4bc3-b747-0d9e4d34cb26.jpg" alt=""></li></div></div><div class="slick-slide slick-cloned" data-slick-index="14" aria-hidden="true" tabindex="-1"><div><li class="cell" style="width: 100%; display: inline-block;"><img src="https://www.komsco.com/popup/kor/banner/a84bd6f3-c69e-4015-b914-ce71e676e5f7.jpg" alt=""></li></div></div><div class="slick-slide slick-cloned" data-slick-index="15" aria-hidden="true" tabindex="-1"><div><li class="cell" style="width: 100%; display: inline-block;"><img src="https://www.komsco.com/popup/kor/banner/db86dcd8-5eca-42d0-95ca-3e485f27067f.jpg" alt=""></li></div></div><div class="slick-slide slick-cloned" data-slick-index="16" aria-hidden="true" tabindex="-1"><div><li class="cell" style="width: 100%; display: inline-block;"><img src="https://www.komsco.com/popup/kor/banner/920acb80-4c8e-4f2f-ac6b-df06637a6f8c.jpg" alt=""></li></div></div><div class="slick-slide slick-cloned" data-slick-index="17" aria-hidden="true" tabindex="-1"><div><li class="cell" style="width: 100%; display: inline-block;"><img src="https://www.komsco.com/popup/kor/banner/2d3efb12-3660-46cd-b314-eb3b42b42cd4.jpg" alt=""></li></div></div></div></div></ul>
-          </div>
-          <div class="side-btns">
-              <div class="link-btn-prev slick-arrow" style=""></div>
-              <div class="link-btn-next slick-arrow" style=""></div>
-          </div>
-      </div>
-  </div>
+ 
+
+
   
   <!-- footer -->
-  <div class="footer">
-      <div class="layout con">
-          <div class="menu">
-              <ul class="row">
-                  <li class="cell">Content</li>
-                  <li class="cell">Content</li>
-                  <li class="cell">Content</li>
-              </ul>
-          </div>
-          <div class="address">
-              <div>......................</div>
-              <div class="tel">
-                  ////////// :
-                  <a href="tel:1577-4321">1577-4321</a>
-              </div>
-          </div>
-          <div class="copy">
-              Copyrightⓒ PERUPACK. Todos los derechos reservados.
-          </div>
-          <div class="site-box row">
-              <ul class="row sns-link cell">
-                  <li class="cell fb"><a href="https://ko-kr.facebook.com/komsco/"></a></li>
-                  <li class="cell tw"><a href="https://twitter.com/komsco"></a></li>
-                  <li class="cell yt"><a href="https://www.youtube.com/user/prkomsco"></a></li>
-                  <li class="cell instar"><a href="https://www.instagram.com/smartkomsco/"></a></li>
-              </ul>
-              <div class="relate-site cell">
-                  <div class="box-1">
-                    Content
-                  </div>
-                  <ul>
-                      <li><a href="#" onclick="return false">Content</a></li>
-                      <li><a href="#" onclick="return false">Content</a></li>
-                      <li><a href="#" onclick="return false">Content</a></li>
-                      <li><a href="#" onclick="return false">Content</a></li>
-                  </ul>
-              </div>
-          </div>
-      </div>
-  </div>
+  <footer class="footer" id="footer">
+    <section class="footer__container container">
+        <nav class="nav nav--footer">
+            <img src="./assets/logoheader.png" class="footer__title">
+            <h1 class="footer__title">Una empresa de </h1>
+           <img src="./assets/cipsurfooter.png" alt="">
+            
+        
+        </nav>
+
+        <form class="footer__form" action="https://formspree.io/f/mrgnraqe" method="POST">
+            <h2 class="footer__newsletter">Comunícate</h2>
+            <div class="footer__inputs">
+                <input type="email" placeholder="Email:" class="footer__input" name="_replyto">
+                <input type="email" placeholder="Email:" class="footer__input" name="_replyto">
+                <input type="submit" value="Registrate" class="footer__submit"> 
+            </div>
+            <br>
+           
+            <a  class="nav__links" href=""><svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M22 12C22 10.6868 21.7413 9.38647 21.2388 8.1731C20.7362 6.95996 19.9997 5.85742 19.0711 4.92896C18.1425 4.00024 17.0401 3.26367 15.8268 2.76123C14.6136 2.25854 13.3132 2 12 2V4C13.0506 4 14.0909 4.20703 15.0615 4.60889C16.0321 5.01099 16.914 5.60034 17.6569 6.34326C18.3997 7.08594 18.989 7.96802 19.391 8.93848C19.7931 9.90918 20 10.9495 20 12H22Z"
+                  fill="white"
+                />
+                <path
+                  d="M2 10V5C2 4.44775 2.44772 4 3 4H8C8.55228 4 9 4.44775 9 5V9C9 9.55225 8.55228 10 8 10H6C6 14.4182 9.58173 18 14 18V16C14 15.4478 14.4477 15 15 15H19C19.5523 15 20 15.4478 20 16V21C20 21.5522 19.5523 22 19 22H14C7.37259 22 2 16.6274 2 10Z"
+                  fill="white"
+                />
+                <path
+                  d="M17.5433 9.70386C17.8448 10.4319 18 11.2122 18 12H16.2C16.2 11.4485 16.0914 10.9023 15.8803 10.3928C15.6692 9.88306 15.3599 9.42017 14.9698 9.03027C14.5798 8.64014 14.1169 8.33081 13.6073 8.11963C13.0977 7.90869 12.5515 7.80005 12 7.80005V6C12.7879 6 13.5681 6.15527 14.2961 6.45679C15.024 6.7583 15.6855 7.2002 16.2426 7.75732C16.7998 8.31445 17.2418 8.97583 17.5433 9.70386Z"
+                  fill="white"
+                />
+              </svg>NUMERO TELEFONICO</a>
+        </form>
+    </section>
+
+    <section class="footer__copy container">
+        <ul class="nav__link nav__link--footer icons" id="icons">
+            <li class="diseño">
+                <a class="instagram" href="https://www.instagram.com" target="_blank">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <i class="fa-instagram" aria-hidden="true"></i>
+                </a>
+            </li>
+
+            <li class="diseño">
+                <a class="facebook" href="https://www.facebook.com" target="_blank">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+            </li>
+
+            <li class="diseño">
+                <a class="tiktok" href="https://www.tiktok.com" target="_blank">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <i class="fa fa-tiktok" aria-hidden="true"></i>
+                </a>
+            </li>
+        </ul>
+
+
+        
+     <!---   <h3 class="footer__copyright">Hecho con <i class="fa-solid fa-heart fa-xs" style="color: #ff0000;"></i> en latam por</h3>
+
+        <img src="images/postealab.png" width="300px">---->
+    </section>
+</footer>
 
   <script>
     AOS.init();
@@ -564,7 +434,7 @@
   console.clear();
   
   setTimeout(function () {
-    $(window).scrollTop(4400);
+    $(window).scrollTop(0);
   }, 100);
   
   // 헤더 메뉴바 스크롤시 변화
