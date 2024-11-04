@@ -10,13 +10,19 @@
     <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
     <title>Perupack</title>
     <link rel="canonical" href="https://codepen.io/ji-hye-oh/pen/VwPNByX">
     <link rel="stylesheet" href="./Design/style.css">
     <link rel="stylesheet" href="./Design/icons.css">
+    <link rel="stylesheet" href="./Design/wsp.css">
   </head>
   
   <body translate="no">
+
+    <a href="https://api.whatsapp.com/send?phone=51947404154&text=Hola,%20me%20gustaria%20obtener%20m%C3%A1s%20información" class="float push" target="_blank">
+      <i class="fa fa-whatsapp my-float"></i>
+      </a>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
@@ -57,12 +63,9 @@
       <div class="sec-page wrap" id="page1" data-offset-top="0">
           
           <div class="mobile-menu-bar">
-            <div class="logo"><a href="#"><img src="./assets/logoheader.png" width=200px></a></div>
+            
            
-              <div class="btns absolute-right">
-                  
-                  <a href="#" class="allmenu-btn"></a>
-              </div>
+            
           </div>
          
           
@@ -73,23 +76,26 @@
           </div>
 
           
-          <div class="top-bar2 text-align-center">
+          <div class="top-bar2">
             <div class="logo"><a href="#"><img src="./assets/logoheader.png" width=200px></a></div>
             <nav class="menu-box-1 inline-block">
-                <ul class="row">
-                   
-                    <li class="cell"><a href="#page2" class="block"><span class="inline-block">Marcas</span></a></li>
-                    <li class="cell"><a href="#page3" class="block"><span class="inline-block">Productos</span></a></li>
-                    <li class="cell"><a href="#page4" class="block"><span class="inline-block">Nosotros</span></a></li>
-                    <li class="cell"><a href="#page5" class="block"><span class="inline-block">Contacto</span></a></li>
+                <ul class="nav__link nav__link--menu">
+                    <li class="cell nav__items"><a href="#page2" class="block nav__links"><span class="inline-block">Marcas</span></a></li>
+                    <li class="cell nav__items"><a href="#page3" class="block nav__links"><span class="inline-block">Productos</span></a></li>
+                    <li class="cell nav__items"><a href="#page4" class="block nav__links"><span class="inline-block">Nosotros</span></a></li>
+                    <li class="cell nav__items"><a href="#page5" class="block nav__links"><span class="inline-block">Contacto</span></a></li>
+                    <img src="./assets/close.svg" class="nav__close">
+                    
                 </ul>
-                <div class="li-indicator-1-box relative">
-                    <div class="li-indicator-1" style="width: 67.207px;"></div>
-                </div>
+                <div class="nav__menu">
+                  <img src="./assets/menu.svg" class="nav__img">
+              </div>
+                
             </nav>
           </div>
-          <div class="page-wrap" data-autoplay="Y">
-              <section class="page page-1 active">
+          
+          <div class="page-wrap">
+              <section class="page page-1 active" >
                   <div class="banner-txt con">
                       
                       <div class="banner1-title">Desarrollamos<br>Productos que<br>hacen la vida un<br>poco mas facil</div>
@@ -101,8 +107,8 @@
           </div>
       </div>
      
-      <div class="marcasfondos" id="page2">
-        <div class="sec-page news"  data-offset-top="570"  data-aos="fade-up" data-aos-duration="1500">
+      <div class="marcasfondos" id="page2" data-offset-top="570"  data-aos="fade-up" data-aos-duration="1500">
+        <div class="sec-page news"  >
           <div class="layout con">
               <div class="box-1">
                   <h3 class="title">
@@ -242,8 +248,8 @@
                     </figure>
                     <div class="contenido">
                         <h3>Foodservice</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto porro excepturi molestiae ut.</p>
-                        
+                        <p>Nuestros empaques garantizan frescura, seguridad y practicidad.</p>
+                        <a href="#">Ver Catalogo</a> <a class="flecha" href="#">></a>
                     </div>
                 </div>
                 <div class="card">
@@ -251,9 +257,9 @@
                         <img src="assets/fondo_header.jpg">
                     </figure>
                     <div class="contenido">
-                        <h3>Industrial y Agro</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto porro excepturi molestiae ut.</p>
-                        
+                        <h3>Industrial & Agro</h3>
+                        <p>Soluciones sostenibles y eficientes que optimizan procesos.</p>
+                        <a href="#">Ver Catalogo</a> <a class="flecha" href="#">></a>
                     </div>
                 </div>
                 <div class="card">
@@ -262,8 +268,8 @@
                     </figure>
                     <div class="contenido">
                         <h3>Home Decor</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto porro excepturi molestiae ut.</p>
-                        
+                        <p>Funcionalidad y calidad diseñada para realizar cada espacio.</p>
+                        <a href="#">Ver Catalogo</a> <a class="flecha" href="#">></a>
                     </div>
                 </div>
               </div>
@@ -294,8 +300,7 @@
                     <div class="carderecha">
                         <div class="contenido">
                             <h3>MISION</h3>
-                            <p class="pderecha">Perupack es una empresa</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto porro excepturi molestiae ut. Aut beatae necessitatibus quis maiores at, nulla consequatur recusandae earum vero nam culpa possimus voluptatem dolorem reprehenderit.</p>
+                            <p class="pderecha">Desarrollamos soluciones de vanguardia que potencien el éxito de nuestros clientes, respaldados por la calidad, el portafolio más completo y un servicio excepcional.</p>
                         </div>
                     </div>
                   </div>   
@@ -310,8 +315,7 @@
                     <div class="carderecha">
                         <div class="contenido">
                             <h3>VISION</h3>
-                            <p class="pderecha">Perupack es una empresa</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto porro excepturi molestiae ut. Aut beatae necessitatibus quis maiores at, nulla consequatur recusandae earum vero nam culpa possimus voluptatem dolorem reprehenderit.</p>
+                            <p class="pderecha">Revolucionar la experiencia de usuario en Latinoamérica.</p>
                         </div>
                     </div>
                   </div>   
@@ -319,10 +323,11 @@
 
             <div class="box-1">
                 <h3 class="title">
+                  Somos parte de una gran
                     <div>
-                        Somos
+                        familia
                     </div>
-                    parte de
+                    
                 </h3>
             </div>
 
@@ -335,9 +340,9 @@
                     </div>
                     <div class="carderecha">
                         <div class="contenido">
-                            <h3>Lala</h3>
-                            <p class="pderecha">Perupack es una empresa</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto porro excepturi molestiae ut. Aut beatae necessitatibus quis maiores at, nulla consequatur recusandae earum vero nam culpa possimus voluptatem dolorem reprehenderit.</p>
+                            <h3></h3>
+                            <p class="pderecha">Somos parte de Cipsur Holding Group, conglomerado empresarial de capital peruano con más de 25 años de experiencia.</p>
+                            <a href="https://www.cipsur.com/en" target="_blank">Conoce más</a>
                         </div>
                     </div>
                   </div>   
@@ -352,22 +357,24 @@
 
   
   <!-- footer -->
-  <footer class="footer-distributed" id="page5">
+  <footer class="footer-distributed" id="page5" data-offset-top="570">
 
     <div class="footer-left">
-        <h3><img src="./assets/logoheader.png" alt="" width="100%" height="100%"></h3>
+        <h3><img class="footerpack" src="./assets/logoheader.png" alt="" width="100%" height="100%"></h3>
 
         <p class="footer-links">
             Una empresa de
         </p>
-        <img src="./assets/cipsurfooter.png" width="60%" height="60%" alt="">
+        <img class="footercipsur" src="./assets/cipsurfooter.png" width="60%" height="60%" alt="">
     </div>
 
     <div class="footer-center">
         <div>
             <i class="fa fa-map-marker"></i>
-            <p><span>Ubicacion</span>
-                Av. Perupack 145</p>
+            <p><span>Sede</span>
+                Palmacenes Business <br>
+              Center, Trujillo, Perú  </p>
+                
         </div>
 
         <div>
@@ -376,13 +383,13 @@
         </div>
         <div>
             <i class="fa fa-envelope"></i>
-            <p><a href="mailto:sagar00001.co@gmail.com">perupack@gmail.com</a></p>
+            <p>info@perupack.biz</p>
         </div>
     </div>
     <div class="footer-right">
         <p class="footer-company-about">
-            <span>Comunícate</span>
-            <input type="email" name="" placeholder="Email" id="email" class="email" autocomplete="off">
+            <span>Conéctate</span>
+            
         </p>
         <div class="footer-icons">
           <section class="footer__copy">
@@ -426,6 +433,16 @@
                       <i class="fa-brands fa-youtube" aria-hidden="true"></i>
                   </a>
               </li>
+
+              <li class="diseño">
+                <a class="youtube" href="https://www.linkedin.com/company/perupack/?originalSubdomain=pe" target="_blank">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </li>
             </ul>
 
         </section> </div>
@@ -433,297 +450,64 @@
 </footer>
 <script src="https://kit.fontawesome.com/2f3116ebd7.js" crossorigin="anonymous"></script>
 <script src="./js/script.js"></script>
+<script src="./js/menu.js"></script>
   <script>
     AOS.init();
   </script>
     
-        <script id="rendered-js">
-  console.clear();
-  
-  setTimeout(function () {
-    $(window).scrollTop(0);
-  }, 100);
-  
-  // 헤더 메뉴바 스크롤시 변화
-  function NotScrollTop0__init() {
-    var scrollTop = $(window).scrollTop();
-  
-    if (scrollTop > 20) {
-      $('html').addClass('not-scroll-top-0');
-    } else
-    {
-      $('html').removeClass('not-scroll-top-0');
-    }
-  }
-  
-  $(window).scroll(NotScrollTop0__init);
-  NotScrollTop0__init();
-  
-  
-  var $liIndicator1 = $('.top-bar .menu-box-1 > .li-indicator-1-box > .li-indicator-1');
-  
-  // 인디케이터 시작
-  $('.top-bar .menu-box-1 > ul > li').mouseenter(function () {
-    var $this = $(this);
-  
-    var $menuBox1 = $this.closest('.menu-box-1');
-    var menuBox1Left = $menuBox1.position().left;
-    var $span = $this.find(' > a > span');
-  
-    var positionLeft = $span.position().left - menuBox1Left;
-  
-    var width = $span.outerWidth();
-  
-    $liIndicator1.css({
-      width: width,
-      left: positionLeft });
-  
-  });
-  
-  $('.top-bar .menu-box-1 > ul > li').mouseleave(function () {
-    /*
-    $liIndicator1.css({
-        left:''
-    });
-    */
-  
-    $liIndicator1.css('left', '');
-  });
-  // 인디케이터 끝
-  
-  // 서브메뉴
-  $('.top-bar .menu-box-1 > ul > li').mouseenter(function () {
-    var $this = $(this);
-    var $topBar = $this.closest('.top-bar');
-  
-    var $contentBox = $topBar.find('.content-box');
-  
-    $contentBox.find('> ul > li.active').removeClass('active');
-  
-    var index = $this.index();
-    var $target = $contentBox.find('> ul > li').eq(index);
-    $target.addClass('active');
-  
-    var height = $target.height();
-  
-    $contentBox.css('height', height);
-  });
-  
-  $('.top-bar').mouseleave(function () {
-    var $topBar = $(this);
-  
-    var $contentBox = $topBar.find('.content-box');
-    $contentBox.css('height', '');
-  });
-  
-  //banner slide (page1) 슬라이드
-  $('.page-wrap > .page-btns > div').click(function () {
-    var $this = $(this);
-  
-    $this.siblings('.active').removeClass('active');
-    $this.addClass('active');
-  
-    var $pageWrap = $this.closest('.page-wrap');
-    var $current = $pageWrap.find('> section.active');
-    var index = $this.index();
-  
-    $current.removeClass('active');
-    $pageWrap.find('> section').eq(index).addClass('active');
-  });
-  
-  setInterval(function () {
-    if ($('.wrap .page-wrap').attr('data-autoplay') == 'Y') {
-      var $post = $('.page-wrap > .page-btns > div.active').next('div');
-  
-      if ($post.length == 0) {
-        $('.page-wrap > .page-btns > div:first-child').click();
-      } else
-      {
-        $post.click();
-      }
-    }
-  }, 3000);
-  
-  $('.wrap .page-btns > .play-btns .stop').click(function () {
-    $('.wrap .page-wrap').attr('data-autoplay', 'Y');
-    //alert('stop');
-  });
-  $('.wrap .page-btns > .play-btns .play').click(function () {
-    $('.wrap .page-wrap').attr('data-autoplay', 'N');
-    //alert('play');
-  });
-  
-  // 더보기 토글
-  $('.page-wrap > .quick > .btn-more').click(function () {
-    var $this = $(this);
-    var $quick = $this.closest('.quick');
-    var $target = $quick.find('> ul > .hide');
-    var hideHasClassActive = $target.hasClass('active');
-  
-    if (hideHasClassActive) {
-      //console.log("active 클래스를 가지고 있습니다.");
-      $target.removeClass('active');
-    } else
-    {
-      //console.log("active 클래스를 가지고 있지 않습니다.");
-      $target.addClass('active');
-    }
-  });
-  
-  // 뉴스 슬라이드 버튼
-  $('section .news-slider > .page-btns > div').click(function () {
-    var $this = $(this);
-  
-    $this.addClass('active');
-    $this.siblings('.active').removeClass('active');
-  
-    var index = $this.index();
-  
-    var $newsSlider = $this.closest('.news-slider');
-  
-    $newsSlider.find(' > .news-slides > ul > li.active').removeClass('active');
-    $newsSlider.find(' > .news-slides > ul > li').eq(index).addClass('active');
-  });
-  
-  // 팝업 슬라이더
-  $('.popup .slider .page-btns > div').click(function () {
-    var $this = $(this);
-    $this.siblings('.active').removeClass('active');
-    $this.addClass('active');
-  
-    var $slider = $this.closest('.slider');
-    var $current = $slider.find('> .slides > div.active');
-    var index = $this.index();
-  
-    $current.removeClass('active');
-    $slider.find('> .slides > div').eq(index).addClass('active');
-  });
-  
-  
-  setInterval(function () {
-    if ($('.popup .slider').attr('data-autoplay') == 'Y') {
-      var $post = $('.popup .slider .page-btns > div.active').next('div');
-  
-      if ($post.length == 0) {
-        $('.popup .slider .page-btns > div:first-child').click();
-      } else
-      {
-        $post.click();
-      }
-    }
-  }, 3000);
-  
-  $('.popup .slider .page-btns > .btn-play').click(function () {
-    $('.popup .slider').attr('data-autoplay', 'Y');
-  
-  });
-  $('.popup .slider .page-btns > .btn-stop').click(function () {
-    $('.popup .slider').attr('data-autoplay', 'N');
-  });
-  
-  //page 이동
-  $('#page-nav > li > a').click(function (e) {
-    var href = $(this).attr('href');
-  
-    var targetTop = $(href).offset().top;
-  
-    /*
-    // 한번에 가도록 하는 방법
-    $(window).scrollTop(targetTop);
-    */
-  
-    $('html').stop().animate({ scrollTop: targetTop }, 300);
-  
-    e.preventDefault();
-  });
-  
-  function Page__updateIndicatorActive() {
-    var scrollTop = $(window).scrollTop();
-  
-    // 역순으로 검색해야 편하다
-    $($('.sec-page').get().reverse()).each(function (index, node) {
-      var $node = $(this);
-      var offsetTop = parseInt($node.attr('data-offset-top'));
-  
-      if (scrollTop + 300 >= offsetTop) {
-        // 기존 녀석에게 활성화 풀고
-        $('#page-nav > li.active').removeClass('active');
-        // 해당하는 녀석에게 활성화 넣고
-  
-        var currentPageIndex = $node.index();
-        $('#page-nav > li').eq(currentPageIndex).addClass('active');
-  
-        $('html').attr('data-current-page-index', currentPageIndex);
-  
-        return false; // 더 이상 다른 페이지를 검사하지 않는다.
-      }
-    });
-  }
-  
-  // 각 페이지의 offsetTop 속성을 업데이트
-  function Page__updateOffsetTop() {
-  
-    $('.sec-page').each(function (index, node) {
-      var $page = $(node);
-      var offsetTop = $page.offset().top;
-  
-      $page.attr('data-offset-top', offsetTop);
-    });
-  
-    // 계산이 바뀌었으니까, 다시 상태 업데이트
-    Page__updateIndicatorActive();
-  }
-  
-  function Page__init() {
-    Page__updateOffsetTop();
-  }
-  
-  // 초기화
-  Page__init();
-  
-  // 화면이 리사이즈 할 때 마다, offsetTop을 다시계산
-  $(window).resize(Page__updateOffsetTop);
-  
-  // 스크롤이 될 때 마다, 인디케이터의 상태를 갱신
-  $(window).scroll(Page__updateIndicatorActive);
-  
-  
-  
-  //page 4 - slick slider
-  $('section > .business > .layout > .slider > .slides').slick({
-    autoplay: false,
-    autoplaySpeed: 1000,
-    arrows: true,
-    prevArrow: $('.btn-prev'),
-    nextArrow: $('.btn-next') });
-  
-  
-  //link banner 
-  $('.link-banner .row').slick({
-    autoplay: false,
-    arrows: true,
-    slidesToShow: 5,
-    variableWidth: true,
-    touchMove: false,
-    prevArrow: $('.link-btn-prev'),
-    nextArrow: $('.link-btn-next') });
-  
-  
-  //footer 토글
-  $('.footer > .layout > .site-box > .relate-site > .box-1').click(function () {
-    var $this = $(this);
-    $this.toggleClass('active');
-  });
-  //footer 마우스리브
-  $('.footer > .layout > .site-box > .relate-site > .box-1').mouseleave(function () {
-    var $this = $(this);
-    $this.removeClass('active');
-  });
-  //# sourceURL=pen.js
-      </script>
-  
+    <script id="rendered-js">
+
+function Page__updateIndicatorActive() {
+  var scrollTop = $(window).scrollTop();
+  var windowHeight = $(window).height();
+  var documentHeight = $(document).height();
+
+ 
+  $($('.sec-page').get().reverse()).each(function (index, node) {
+    var $node = $(this);
+    var offsetTop = parseInt($node.attr('data-offset-top'));
+
     
+    if (scrollTop + windowHeight >= documentHeight - 50) {
+      $('#page-nav > li.active').removeClass('active');
+      $('#page-nav > li').last().addClass('active'); 
+      $('html').attr('data-current-page-index', $('#page-nav > li').length - 1);
+      return false;
+    }
+
+   
+    if (scrollTop + 300 > offsetTop) {
+      $('#page-nav > li.active').removeClass('active');
+      var currentPageIndex = $node.attr('data-index') || $node.index();
+      $('#page-nav > li').eq(currentPageIndex).addClass('active');
+      $('html').attr('data-current-page-index', currentPageIndex);
+      return false;
+    }
+  });
+}
+
+function Page__updateOffsetTop() {
   
-  
-  
+  $('.sec-page').each(function (index, node) {
+    var $page = $(node);
+    var offsetTop = $page.offset().top;
+
+    $page.attr('data-offset-top', offsetTop);
+    $page.attr('data-index', index);  
+  });
+
+  Page__updateIndicatorActive();
+}
+    
+      function Page__init() {
+        Page__updateOffsetTop();
+      }
+    
+      Page__init();
+    
+      $(window).resize(Page__updateOffsetTop);
+    
+      $(window).scroll(Page__updateIndicatorActive);
+    
+    </script>
   </body></html>
