@@ -791,13 +791,15 @@ html.not-scroll-top-0 .wrap .top-bar2 > .gnb > .btns >.allmenu-btn::after, .wrap
   }
 
   .page-wrap .banner-txt a {
-      background-color: #1b39bb;
-      color: white;
-      padding:10px 20px;
-      display:inline-block;
-      transition:background .3s, white .3s;
-      margin-left: 9px;
-      border-radius: 20px;
+    text-decoration: none;
+    display: inline-block;
+    background-color: #1b39bb;
+    margin-top: 10px;
+    color: #ffffff;
+    border: 1px solid #1b39bb;
+    border-radius: 4px;
+    transition: all 400ms ease;
+    padding: 7px;
   }
   .page-wrap .banner-txt a:hover {
       background:#1b2341;
@@ -1071,7 +1073,7 @@ html.not-scroll-top-0 .wrap .top-bar2 > .gnb > .btns >.allmenu-btn::after, .wrap
     font-size:36px;
     line-height:46px;
     margin:0 0 45px 0;
-    color:white;
+    color:rgb(0, 0, 0);
     font-weight:300; 
     display:inline-block;
     margin-top:80px;
@@ -1094,7 +1096,7 @@ section >.marcasfondos> .news > .layout > .box-1 > .title > div::after {
     background-position:center 50%;
 }
   section > .marcasfondos {
-    background: #ff6525;
+    
     text-align: center;
     scroll-margin-top: 10ex;
 }
@@ -2363,7 +2365,7 @@ section >.marcasfondos> .news > .layout > .box-1 > .title > div::after {
     bottom: 0;
 }
 
-@media (max-height:800px) {
+@media (max-height: 800px) {
     footer {
         position: static;
     }
@@ -2379,17 +2381,34 @@ section >.marcasfondos> .news > .layout > .box-1 > .title > div::after {
     text-align: left;
     padding: 50px 50px 60px 50px;
     margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
-    display: inline-block;
-    vertical-align: top;
+.footer-distributed .footer-left, 
+.footer-distributed .footer-center, 
+.footer-distributed .footer-right {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
 }
 
-/* Footer left */
+.footer-distributed .footer-center {
+    width: 35%;
+    border-left: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+}
 
-.footer-distributed .footer-left {
-    width: 30%;
+.footer-distributed .footer-right {
+    width: 40%;
+}
+
+.footer-distributed .footer-center .border-line {
+    height: 50px;
+    width: 1px;
+    background-color: #ffffff;
+    margin: 0 auto;
 }
 
 .footer-left .footerpack {
@@ -2402,12 +2421,9 @@ section >.marcasfondos> .news > .layout > .box-1 > .title > div::after {
     margin: 0;
 }
 
-
 .footer-distributed h3 span {
     color: #1b39bb;
 }
-
-/* Footer links */
 
 .footer-distributed .footer-links {
     color: #ffffff;
@@ -2430,14 +2446,7 @@ section >.marcasfondos> .news > .layout > .box-1 > .title > div::after {
     margin: 0;
 }
 
-/* Footer Center */
-
-.footer-distributed .footer-center {
-    width: 35%;
-}
-
 .footer-distributed .footer-center i {
-    
     color: #ffffff;
     font-size: 25px;
     width: 38px;
@@ -2470,13 +2479,6 @@ section >.marcasfondos> .news > .layout > .box-1 > .title > div::after {
 .footer-distributed .footer-center p a {
     color: white;
     text-decoration: none;
-    ;
-}
-
-/* Footer Right */
-
-.footer-distributed .footer-right {
-    width: 30%;
 }
 
 .footer-distributed .footer-company-about {
@@ -2484,12 +2486,6 @@ section >.marcasfondos> .news > .layout > .box-1 > .title > div::after {
     color: #92999f;
     font-size: 13px;
     font-weight: normal;
-}
-
-.footer-distributed  .footer-company-about  .email{
-    border: 30%;
-    padding: 10px;
-    border-radius: 10px;
 }
 
 .footer-distributed .footer-company-about span {
@@ -2509,7 +2505,6 @@ section >.marcasfondos> .news > .layout > .box-1 > .title > div::after {
     width: 35px;
     height: 35px;
     cursor: pointer;
-    
     border-radius: 2px;
     font-size: 20px;
     color: #ffffff;
@@ -2527,34 +2522,38 @@ section >.marcasfondos> .news > .layout > .box-1 > .title > div::after {
     color: #3F71EA;
 }
 
-
 .nav__link1 {
-    
-        
     padding: 0;
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: max-content;
     gap: 2em;
-    
 }
-@media (max-width: 880px) {
-    .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+
+@media (max-width: 800px) {
+    .footer-distributed {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right {
         display: block;
         width: 100%;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
         text-align: center;
     }
 
-    .footer-distributed .footer-right {
-        align-items: center;
-        justify-content: center;
+    .footer-distributed .footer-center {
+        border-left: none;
+        border-right: none;
     }
 
-    .footer-distributed .footer-center i {
-        margin-left: 0;
+    .footer-distributed .footer-icons {
+        margin-top: 15px;
     }
-}       
+}
         
 
 
