@@ -4,7 +4,10 @@
     font-family: BrownAustin;
     src: url(../fonts/Brown\ Austin\ Sans.ttf);
 }
-
+@font-face {
+    font-family: Horizon;
+    src: url(../fonts/Horizon\ Type\ -\ AcherusGrotesque-Regular.otf);
+}
 
   
   html {
@@ -50,6 +53,7 @@
     .top-bar2 {
         position:fixed;
         padding-top: 20px;
+        padding-bottom: 20px;
         top:30px;
         left:0;
         width:100%;
@@ -58,8 +62,18 @@
         background-color: #1b39bb;
         
     }
-
-    
+    .wrap > .top-bar2 > .menu-box-1 > ul > li > a {
+        color: #000000;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .wrap > .top-bar2 > .menu-box-1{
+        background: white;
+        margin-right: 20px;
+        border: white 1px solid;
+        border-radius: 20px;
+        color: #222;
+    }
     .nav__link {
     
         
@@ -67,13 +81,13 @@
         display: grid;
         grid-auto-flow: column;
         grid-auto-columns: max-content;
-        gap: 2em;
+      
         
     }
 }
 
 @media (max-width:1214px){
-
+    
     .top-bar2 {
         position:fixed;
         padding-top: 20px;
@@ -87,7 +101,6 @@
     }
     .nav__menu{
         display: block;
-
     }
     .nav__link {
     
@@ -350,9 +363,9 @@
         overflow-x: hidden;
     }
 
-
+    
     .top-bar2{
-        text-align: center;
+        text-align: right;
     }
 
     .mobile-menu{
@@ -407,95 +420,11 @@ html.not-scroll-top-0 .mobile-menu-bar {
       right:2%;
   }
 
-  .mobile-menu-bar > .btns > a.allmenu-btn {
-      background-image:url(https://www.komsco.com/images/site/kor/layout/allmenu_ico2.png);
-      background-repeat:no-repeat;
-      width:32px;
-      height:31px;
-      display:inline-block;
-  }
 
-
-
-
-.wrap > .top-bar > .menu-box-1 > ul > li {
-    padding:0 20px 15px 0;
-    
-}
-
-
-
-
-
-
-html.not-scroll-top-0 .top-bar {
-    position: static;
-    box-shadow:3px 0px 8px 1px #afafaf;
-} 
-.wrap > .top-bar > .menu-box-1 > ul > li > a {
-    background-color: #000;
-    color:#000000;
-    font-size:20px;
-    font-weight:500;
-}
-.wrap > .top-bar:hover > .menu-box-1 > ul > li > a , html.not-scroll-top-0 .wrap > .top-bar > .menu-box-1 > ul > li > a {
-    color:#222222;
-}
-/* 로고 */
-.wrap > .top-bar > div.logo > a {
-    height: 5px;
-    position:relative;
-    display:block;
-    top:20px;
-    left:2%;
-    width:125px;
-    
-}
-.wrap > .top-bar > .logo > a::after {
-    content:"";
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    z-index:1;
-    opacity:0;
-    transition:opacity .3s;
-}
-html.not-scroll-top-0 .wrap > .top-bar > .logo > a::after, .wrap > .top-bar:hover > .logo > a::after {
-    opacity:1;
-}
-
-
-
-
-
-
-@media ( max-width:1100px ) {
-    .top-bar .menu-box-1 > ul > li:first-child > a {
-        padding-left:50px;
-    }
-
-    .top-bar .menu-box-1 > ul > li:last-child > a {
-        padding-right:50px;
-    }
-}
-
-.top-bar .menu-box-1 > ul > li > a > span {
-    padding:10px 0;
-}
-
-
-
-
-
-
-
-
+  
 
 .wrap > .top-bar2 > .menu-box-1 > ul > li {
-    padding:0 20px 15px 0;
-    
+    padding:0 20px 0 0;
 }
 
 
@@ -508,21 +437,21 @@ html.not-scroll-top-0 .top-bar2 {
     
     
 } 
-.wrap > .top-bar2 > .menu-box-1 > ul > li > a {
-    
-    color:#ffffff;
-    font-size:20px;
-    font-weight:500;
+
+
+
+
+
+.wrap > .top-bar2 > .menu-box-1 > ul > li > a:hover , html.not-scroll-top-0 .wrap > .top-bar2 > .menu-box-1 > ul > li > a {
+    color:#eb640a
 }
-.wrap > .top-bar2:hover > .menu-box-1 > ul > li > a , html.not-scroll-top-0 .wrap > .top-bar2 > .menu-box-1 > ul > li > a {
-    color:#ffffff;
-}
-/* 로고 */
+
+
 .wrap > .top-bar2 > div.logo > a {
     
     position:relative;
     display:block;
-    top:-10px;
+
     left:2%;
     width:125px;
     height:0;
@@ -724,52 +653,158 @@ html.not-scroll-top-0 .wrap .top-bar2 > .gnb > .btns >.allmenu-btn::after, .wrap
   
   /* page-1 */
   .page-wrap {
-      overflow:hidden;
-      position:relative;
-      left:0;
-      top:0;
-      width:100%;
-      height:100vh;
-  }
-  .page-wrap .page {
-      width:100%;
-      height:100%;
-      position:absolute;
-      top:0;
-      left:0;
-      opacity:0;
-      transition:opacity .5s;
-  }
-  .page.active {
-      opacity:1;
-  }
-  .page-1 {
-      background-image:url(../assets/fondo_header.jpg);
-      background-repeat:no-repeat;
-      background-size:cover;
-  }
-  .page-2 {
-      background-image:url(https://www.komsco.com/popup/kor/visual/b7167d98-1211-40d7-bd76-8d587a660905.jpg);
-      background-repeat:no-repeat;
-      background-size:cover;
-  }
-  .page-3 {
-      background-image:url(https://www.komsco.com/popup/kor/visual/97436f95-a516-4a0f-a458-fc9eecae5b90.jpg);
-      background-repeat:no-repeat;
-      background-size:cover;
-  }
-  .page-4 {
-      background-image:url(https://www.komsco.com/popup/kor/visual/53df7996-dc36-42b2-8dfa-976e845605e0.jpg);
-      background-repeat:no-repeat;
-      background-size:cover;
-  }
+    overflow: hidden;
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+}
+.page-wrap .page {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.page.active {
+    opacity: 1;
+}
+
+
+/* Estilos nuevos */
+.containerbanner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    gap: 0px 300px;
+    width: 100%;
+    
+}
+
+.content {
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    
+    max-width: 500px;
+    grid-area: content;
+}
+
+.content h1 {
+    font-size: 4rem;
+    line-height: 1.2;
+    color: #0044cc;
+    font-weight: bold;
+}
+
+.highlight {
+    color: #ff6600;
+    font-weight: bold;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: #333333;
+    margin: 10px 0 20px;
+    font-weight: bold;
+}
+
+.subtitle-arriba {
+    font-size: 1.3rem;
+    color: #333333;
+    margin: 10px 0 20px;
+    font-weight: 600;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.buttons .contact,
+.buttons .catalog {
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1rem;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Horizon";
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.buttons .contact {
+    background-color: #ff6600;
+}
+
+.buttons .catalog {
+    background-color: #0044cc;
+}
+
+.buttons .contact:hover,
+.buttons .catalog:hover {
+    opacity: 0.8;
+}
+
+.cipsur {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: black;
+    font-weight: bold;
+}
+
+.cipsur img {
+    width: 130px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.images img {
+    height: 600px;
+    width: 600px;
+    height: auto;
+    object-fit: contain;
+    margin-top: -70px;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+    .containerbanner {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .content {
+        text-align: left;
+        padding: 20px;
+        padding-top: 0px;
+    }
+}
+
   /* 베너 텍스트 */
   .banner-txt {
       color:#ffffff;
       position:absolute;
-      top:34%;
+      top:20%;
       left:0;
-      margin-left:120px;
+      
   }
   .page-wrap .banner-txt .banner1-title {
       font-size:45px;
@@ -792,32 +827,39 @@ html.not-scroll-top-0 .wrap .top-bar2 > .gnb > .btns >.allmenu-btn::after, .wrap
     .page-wrap .banner-txt a {
         text-decoration: none;
         display: inline-block;
-        background-color: #1b39bb;
+        
         margin-top: 10px;
         color: #ffffff;
-        border: 1px solid #1b39bb;
+       
         border-radius: 4px;
         transition: all 400ms ease;
         padding: 7px;
-        margin-left: 40px;
+      
     }
   }
 
   .page-wrap .banner-txt a {
     text-decoration: none;
     display: inline-block;
-    background-color: #1b39bb;
     margin-top: 10px;
     color: #ffffff;
-    border: 1px solid #1b39bb;
-    border-radius: 4px;
+    font-size: 15px;
+    border-radius: 26px;
     transition: all 400ms ease;
-    padding: 7px;
+    padding: 15px 27px;
   }
-  .page-wrap .banner-txt a:hover {
-      background:#1b2341;
-      color:white;
+  .page-wrap .banner-txt .catalog:hover {
+      background:white;
+      color:#1b39bb;
+      border: 1px solid #1b39bb;
   }
+
+  .page-wrap .banner-txt .contact:hover {
+    background:white;
+    color:#ff6600;
+    border: 1px solid #ff6600;
+}
+
   .page-wrap .banner-txt .banner-top-txt {
       letter-spacing:9px;
       font-size:15px;
@@ -932,18 +974,6 @@ html.not-scroll-top-0 .wrap .top-bar2 > .gnb > .btns >.allmenu-btn::after, .wrap
       background-repeat:no-repeat;
       background-position:center
   }
-  .wrap .quick .quick1::before {
-      background-image:url(https://www.komsco.com/images/site/kor/main/quick_ico4.png);
-  }
-  .wrap .quick .quick2::before {
-      background-image:url(https://www.komsco.com/images/site/kor/main/quick_ico1.png);
-  }
-  .wrap .quick .quick3::before {
-      background-image:url(https://www.komsco.com/images/site/kor/main/quick_ico2.png);
-  }
-  .wrap .quick .quick4::before {
-      background-image:url(https://www.komsco.com/images/site/kor/main/quick_ico5.png);
-  }
   .wrap .quick li.hide {
       height:0;
       opacity:0;
@@ -1010,6 +1040,7 @@ html.not-scroll-top-0 .wrap .top-bar2 > .gnb > .btns >.allmenu-btn::after, .wrap
   #page-nav > li.active > a > div {
       color:#fff;
   }
+
   #page-nav > li.active > a::before {
       content:"";
       display:block;
@@ -2581,8 +2612,8 @@ section >.marcasfondos> .news > .layout > .box-1 > .title > div::after {
 
 @media (min-width:1270px) {
     .footer-left > img {
-        width: 200px;
-        height: 60px;
+        width: 140px;
+        height: 40px;
         padding-left: 16px;
     }
 
@@ -2852,6 +2883,24 @@ section >.marcasfondos> .news > .layout > .box-1 > .title > div::after {
    @media (max-width:1020px) {
     .containercipsur {
         flex-wrap: wrap;
+    }
+  }
+
+  @media (max-width:850px) {
+    .content h1 {
+        font-size: 3.3rem;
+        line-height: 1.2;
+        color: #0044cc;
+        font-weight: bold;
+        margin-top: -30px;
+    }
+
+    .butons .contact{
+        background-color: #ff6600;
+    }
+
+    .images {
+        display: none;
     }
   }
 
