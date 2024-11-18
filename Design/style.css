@@ -2457,7 +2457,7 @@ section > .cipsurmarcafondo > .layout >  .box-1 > .title > div  {
 
 .footer-logo img {
   width: 200px;
-  height: 70px;
+  height: 50px;
 }
 
 .motto-button{
@@ -2481,10 +2481,12 @@ section > .cipsurmarcafondo > .layout >  .box-1 > .title > div  {
 
 .footer-button {
   width: 300px;
+  
 }	
 
 .footer-button button{
   background-color: #f39200;
+  font-family: "BrownAustin", sans-serif;
   color: #ffffff;
   border: none;
   border-radius: 20px;
@@ -2561,6 +2563,7 @@ section > .cipsurmarcafondo > .layout >  .box-1 > .title > div  {
 
   
   .footer-bottom {
+    
     font-size: 12px;
     text-align: center;
     margin-top: 20px;
@@ -2943,9 +2946,9 @@ section > .cipsurmarcafondo > .layout >  .box-1 > .title > div  {
     
     .cipsurmarcafondo .linea {
         border: rgb(94, 89, 89) 1px solid;
-        margin-left: 20px;
-         margin-right: 20px;
-         margin-bottom: 20px;
+        margin-left: 40px;
+         margin-right: 40px;
+         margin-bottom: 40px;
          margin-top: 20px;
         height: 550px; 
         
