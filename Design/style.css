@@ -2467,7 +2467,7 @@ section > .cipsurmarcafondo > .layout >  .box-1 > .title > div  {
     justify-content: space-between;
     align-items: center;
     text-align: left;
-    padding-bottom: 43px;
+    height: 104px;
 }
 
 .footer-motto {
@@ -2485,7 +2485,7 @@ section > .cipsurmarcafondo > .layout >  .box-1 > .title > div  {
 }	
 
 .footer-button button{
-  background-color: #f39200;
+  background-color: #ff6600;
   font-family: "BrownAustin", sans-serif;
   color: #ffffff;
   border: none;
@@ -2506,6 +2506,10 @@ section > .cipsurmarcafondo > .layout >  .box-1 > .title > div  {
   gap: 20px;
   text-align: left;
   align-items: start;
+}
+
+.footer-column{
+    margin-top: -15px;
 }
 
 .footer-column h3 {
@@ -2585,7 +2589,7 @@ section > .cipsurmarcafondo > .layout >  .box-1 > .title > div  {
     .motto-button {
       flex-direction: column;
       text-align: center;
-      padding-bottom: 20px;
+      padding-bottom: 50px;
     }
   
     .footer-motto {
@@ -2599,7 +2603,7 @@ section > .cipsurmarcafondo > .layout >  .box-1 > .title > div  {
   }
   
   /* Ajuste para pantallas pequeñas */
-  @media (max-width: 768px) {
+  @media (max-width: 1010px) {
     .footer-content {
       grid-template-columns: 1fr; /* Una columna para simplificar */
       gap: 30px;
@@ -2639,7 +2643,7 @@ section > .cipsurmarcafondo > .layout >  .box-1 > .title > div  {
     }
   
     .motto-button {
-      padding-bottom: 10px;
+      padding-bottom: 70px;
     }
   
     .footer-content {
@@ -2931,7 +2935,7 @@ section > .cipsurmarcafondo > .layout >  .box-1 > .title > div  {
     display: flex;
     max-width: 100%;
     margin-top: -120px;
-    margin-bottom: 50px;
+   
    }
 
    .containercipsur img {
