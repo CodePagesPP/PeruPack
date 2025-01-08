@@ -1142,7 +1142,7 @@ section >.marcasfondos> .news > .layout > .box-1 > .title > div::after {
   section > .marcasfondos {
     
     text-align: center;
-    scroll-margin-top: 20ex;
+    scroll-margin-top: 13ex;
 }
 .sec-page.news {
     scroll-margin-top: 13ex;
