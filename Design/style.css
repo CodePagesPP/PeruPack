@@ -1145,7 +1145,7 @@ section >.marcasfondos> .news > .layout > .box-1 > .title > div::after {
     scroll-margin-top: 13ex;
 }
 .sec-page.news {
-    scroll-margin-top: 13ex;
+    scroll-margin-top: 10ex;
 }
 
   section > .page.news {
@@ -2426,8 +2426,8 @@ section > .cipsurmarcafondo > .layout >  .box-1 > .title > div  {
 .footer {
   background-color: #1b39bb;
   color: #ffffff;
-  padding: 40px 20px;
- 
+  padding: 0px 20px;
+
 }
 
 .footer-container {
