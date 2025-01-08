@@ -802,7 +802,7 @@ html.not-scroll-top-0 .wrap .top-bar2 > .gnb > .btns >.allmenu-btn::after, .wrap
   .banner-txt {
       color:#ffffff;
       position:absolute;
-      top:15%;
+      top:14%;
       left:0;
       
   }
@@ -1145,7 +1145,7 @@ section >.marcasfondos> .news > .layout > .box-1 > .title > div::after {
     scroll-margin-top: 20ex;
 }
 .sec-page.news {
-    scroll-margin-top: 10ex;
+    scroll-margin-top: 13ex;
 }
 
   section > .page.news {
