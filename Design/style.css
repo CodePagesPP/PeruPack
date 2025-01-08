@@ -2670,6 +2670,7 @@ section > .cipsurmarcafondo > .layout >  .box-1 > .title > div  {
     display: flex;
     max-width: 100%;
     margin-top: -80px;
+    justify-content: space-between;
   }
 
   @media (max-width:1020px) {
@@ -2728,12 +2729,12 @@ section > .cipsurmarcafondo > .layout >  .box-1 > .title > div  {
 
   .cardVistazo .contenidoVistazo p {
     text-align: center;
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .cardVistazo img {
     width: 100%;
-    height: 150px;
+    height: 90px;
    
   }
 
