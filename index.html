@@ -11,7 +11,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     
-    <title>Perupack</title>
+    <title>Perupack - One Stop Shop Solution</title>
     <link rel="canonical" href="https://codepen.io/ji-hye-oh/pen/VwPNByX">
     <link rel="stylesheet" href="./Design/style.css">
     <link rel="stylesheet" href="./Design/icons.css">
@@ -80,12 +80,20 @@
                     <li class="cell nav__items"><a href="#Nosotros" class="block nav__links"><span class="inline-block">Nosotros</span></a></li>
                     <li class="cell nav__items"><a href="#Contacto" class="block nav__links"><span class="inline-block">Contacto</span></a></li>
                     <img src="./assets/close.svg" class="nav__close">
+                    
                 </ul>
+                
                 <div class="nav__menu">
                   <img src="./assets/menu.svg" class="nav__img">
               </div>
                 
             </nav>
+            <div class="bandera">
+              <a id="language-toggle">
+                  <img id="flag" src="./assets/es.svg" width="30px">
+                  <span id="language-text">ES</span>
+              </a>
+          </div>
           </div>
           
           <div class="page-wrap">
@@ -113,7 +121,7 @@
         </div>
       </div>
      
-      <div class="marcasfondos" id="Marcas" data-offset-top="570"  data-aos="fade-up" data-aos-duration="1500">
+      <div class="marcasfondos" id="Marcas">
         <div class="sec-page news"  >
           <div class="layout con">
               <div class="box-1">
@@ -125,7 +133,7 @@
                   </h3>
               </div>
 
-              <div class="parent">
+              <div class="parent" data-offset-top="570"  data-aos="fade-up" data-aos-duration="1500">
                 <div class="flechaizquierda">
                   <img src="./assets/flecha-izquierda.png" width="20px" height="20px" alt="">
                 </div>
@@ -194,7 +202,7 @@
         </div>
       </div>
       <!-- page 3 -->
-      <div class="sec-page news" id="Productos" data-offset-top="570"  data-aos="fade-up" data-aos-duration="1500">
+      <div class="sec-page news" id="Productos">
         <div class="layout con">
             <div class="box-1">
                 <h3 class="title">
@@ -215,7 +223,7 @@
                     <div class="contenido">
                         <h3>Foodservice</h3>
                         <p>Nuestros empaques garantizan frescura, seguridad y practicidad.</p>
-                        <a class="flecha" href="#">Ver Catalogo</a>
+                        <a class="flecha" href="./assets/pdf/CATÁLOGO PERUPACK 2024 MARCAS.pdf" target="_blank">Ver Catalogo</a>
                     </div>
                 </div>
                 <div class="card">
@@ -225,7 +233,7 @@
                     <div class="contenido">
                         <h3>Industrial & Agro</h3>
                         <p>Soluciones sostenibles y eficientes que optimizan procesos.</p>
-                        <a class="flecha" href="#">Ver Catalogo</a>
+                        <a class="flecha" href="./assets/pdf/CATÁLOGO PERUPACK 2024 MARCAS.pdf" target="_blank">Ver Catalogo</a>
                     </div>
                 </div>
                 <div class="card">
@@ -235,7 +243,7 @@
                     <div class="contenido">
                         <h3>Home & Deco</h3>
                         <p>Funcionalidad y calidad diseñada para realizar cada espacio.</p>
-                         <a class="flecha" href="#">Ver Catalogo</a>
+                         <a class="flecha" href="./assets/pdf/CATÁLOGO PERUPACK 2024 MARCAS.pdf" target="_blank">Ver Catalogo</a>
                     </div>
                 </div>
               </div>
@@ -245,7 +253,7 @@
     </div>
       
       <!-- page 4 -->
-      <div class="sec-page news" id="Nosotros" data-offset-top="570"  data-aos="fade-up" data-aos-duration="1500">
+      <div class="sec-page news" id="Nosotros">
         <div class="layout con">
           <div class="box-1">
               <h3 class="title">
@@ -321,18 +329,17 @@
                 <div class="containercipsur">
                     <div class="cardizquierda">
                         <figure>
-                            <img src="assets/cipsur.png">
+                            <img src="assets/cipsurblack.png">
                         </figure>
                     </div>
                     <div class="linea">
                     </div>
                     <div class="carderecha">
                         <div class="contenido">
-                            <div class="imgcipsur">
-                                <img src="assets/cipsurblack.png" alt="">
-                            </div>
+                            
                             
                             <p class="pderecha">Somos parte de Cipsur Holding Group, grupo empresarial peruano con más de 25 años de experiencia y constante crecimiento que ofrece las mejores y más eficientes soluciones en sectores como: Industria, Distribución, Importación, Transporte, Logistica Internacional, Bienes Raíces, Tecnología y Publicidad.</p>
+                            <h3 class="hderecha">Conoce más sobre Cipsur y sus empresas</h3>
                             <a href="https://www.cipsur.com/en" target="_blank">Conoce más</a>
                         </div>
                     </div>
@@ -378,10 +385,10 @@
         <div class="footer-column">
           <h3>Mapa de Sitio</h3>
           <ul>
-            <li><a href="#">Nosotros</a></li>
-            <li><a href="#">Productos</a></li>
-            <li><a href="#">Sectores</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="#Nosotros">Nosotros</a></li>
+            <li><a href="#Productos">Productos</a></li>
+            <li><a href="#Marcas">Sectores</a></li>
+            <li><a href="https://api.whatsapp.com/send?phone=51947404154&text=Hola,%20me%20gustaria%20obtener%20m%C3%A1s%20información">Contacto</a></li>
           </ul>
         </div>
         <div class="footer-column">
@@ -408,6 +415,7 @@
 <script src="https://kit.fontawesome.com/2f3116ebd7.js" crossorigin="anonymous"></script>
 <script src="./js/script.js"></script>
 <script src="./js/menu.js"></script>
+<script src="./js/bandera.js"></script>
 <script>AOS.init();</script>
 <script src="./js/script.js"></script>
   </body></html>

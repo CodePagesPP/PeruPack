@@ -1142,10 +1142,10 @@ section >.marcasfondos> .news > .layout > .box-1 > .title > div::after {
   section > .marcasfondos {
     
     text-align: center;
-    scroll-margin-top: 13ex;
+    scroll-margin-top: 8ex;
 }
 .sec-page.news {
-    scroll-margin-top: 10ex;
+    scroll-margin-top: 8ex;
 }
 
   section > .page.news {
@@ -2797,8 +2797,8 @@ section > .cipsurmarcafondo > .layout >  .box-1 > .title > div  {
 
 
   .cardizquierda img {
-    width: 751px;
-    height: 600px;
+    width: 100%;
+    height: 100%;
   }
 
   @media (max-width:850px) {
@@ -2836,8 +2836,7 @@ section > .cipsurmarcafondo > .layout >  .box-1 > .title > div  {
 
   .cipsurmarcafondo .carderecha h3 {
     color: rgb(0, 0, 0);
-    padding: 50px;
-    font-size: 25px;
+    font-size: 18px;
   }
 
 
@@ -2852,7 +2851,7 @@ section > .cipsurmarcafondo > .layout >  .box-1 > .title > div  {
     border-radius: 4px;
     transition: all 400ms ease;
     padding: 7px;
-    margin-left: 2%;
+    margin-left: 1%;
   }  
 
   .cipsurmarcafondo .carderecha .imgcipsur {
@@ -2886,7 +2885,7 @@ section > .cipsurmarcafondo > .layout >  .box-1 > .title > div  {
   }
 
   .carderecha .pderecha {
-    margin-top: 60px;
+    margin-top: 20px;
     padding-left: 10px;
     font-size: 18px;
     margin-bottom: 20px;
@@ -2960,10 +2959,10 @@ section > .cipsurmarcafondo > .layout >  .box-1 > .title > div  {
    }
 
    .containercipsur img {
-    width: 100%;
-    height: 100%;
+    width: 250px;
+    height: 150px;
     border-radius: 7px;
-    padding: 13px;
+    padding: 90px;
    }
 
    
@@ -2976,7 +2975,7 @@ section > .cipsurmarcafondo > .layout >  .box-1 > .title > div  {
          margin-right: 40px;
          margin-bottom: 40px;
          margin-top: 20px;
-        height: 550px; 
+        height: 360px; 
         
         
          display: block;
@@ -3021,7 +3020,33 @@ section > .cipsurmarcafondo > .layout >  .box-1 > .title > div  {
 
   
 
+  .top-bar2 .bandera {
+    display: inline-block;
+    margin-left: 10px; 
+    vertical-align: middle; 
+}
 
 
+.bandera a {
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+    text-decoration: none;
+    color: rgb(255, 255, 255); 
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.bandera a:hover {
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+.bandera img {
+    vertical-align: middle;
+    width: 30px;
+    height: auto;
+}
 
   
