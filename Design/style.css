@@ -315,7 +315,7 @@
     left:0;
     width:100%;
     transition:background .3s;
-    z-index:10;
+    z-index:10000;
     background-color: #ffffff
    
 }
@@ -366,6 +366,7 @@
     
     .top-bar2{
         text-align: right;
+        z-index: 100000;
     }
 
     .mobile-menu{
@@ -691,7 +692,7 @@ html.not-scroll-top-0 .wrap .top-bar2 > .gnb > .btns >.allmenu-btn::after, .wrap
     justify-content: center;
     align-items: center;
     padding: 20px;
-    
+    z-index: 1000;
     max-width: 500px;
     grid-area: content;
 }
@@ -771,15 +772,42 @@ html.not-scroll-top-0 .wrap .top-bar2 > .gnb > .btns >.allmenu-btn::after, .wrap
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+  
+    width: 100%;
+    height: 600px; 
+    margin: 0 auto; 
 }
 
 .images img {
-    height: 600px;
-    width: 600px;
+   
+    height: 100%;
+    object-fit: cover;
+   
+}
+
+.slider {
+ 
+    overflow: hidden;
+    width: 100%; 
+    height: 100%;
+}
+
+.slider-image {
+    position: absolute;
+    top: 0;
+    left: 100%; 
+    width: 100%;
     height: auto;
     object-fit: contain;
-    margin-top: -70px;
+    transition: all 1s ease;
+}
+
+.slider-image.active {
+    left: 0; 
+}
+
+.slider-image.prev {
+    left: -100%; 
 }
 
 /* Responsive */
@@ -793,8 +821,8 @@ html.not-scroll-top-0 .wrap .top-bar2 > .gnb > .btns >.allmenu-btn::after, .wrap
 
     .content {
         text-align: left;
-        padding: 20px;
-        padding-top: 0px;
+        padding: 10px;
+        padding-left: 120px;
     }
 }
 
@@ -802,8 +830,8 @@ html.not-scroll-top-0 .wrap .top-bar2 > .gnb > .btns >.allmenu-btn::after, .wrap
   .banner-txt {
       color:#ffffff;
       position:absolute;
-      top:14%;
-      left:0;
+      top:13%;
+      
       
   }
   .page-wrap .banner-txt .banner1-title {
@@ -2851,7 +2879,7 @@ section > .cipsurmarcafondo > .layout >  .box-1 > .title > div  {
     border-radius: 4px;
     transition: all 400ms ease;
     padding: 7px;
-    margin-left: 1%;
+    margin-left: 2%;
   }  
 
   .cipsurmarcafondo .carderecha .imgcipsur {
@@ -2958,11 +2986,14 @@ section > .cipsurmarcafondo > .layout >  .box-1 > .title > div  {
    
    }
 
+   .containercipsur .cardizquierda {
+    max-width: 530px;
+    max-height: 530px;
+   }
+
    .containercipsur img {
-    width: 250px;
-    height: 150px;
-    border-radius: 7px;
-    padding: 90px;
+    
+    margin-bottom: 90px;
    }
 
    
@@ -2970,15 +3001,13 @@ section > .cipsurmarcafondo > .layout >  .box-1 > .title > div  {
    @media (min-width:1020px) {
     
     .cipsurmarcafondo .linea {
-        border: rgb(94, 89, 89) 1px solid;
+        border-left: #afafaf solid 1px;
         margin-left: 40px;
-         margin-right: 40px;
-         margin-bottom: 40px;
-         margin-top: 20px;
-        height: 360px; 
-        
-        
-         display: block;
+        margin-right: 40px;
+        margin-bottom: 40px;
+        margin-top: 20px;
+        height: 490px; 
+        display: block;
        }
   }
 
@@ -2994,8 +3023,6 @@ section > .cipsurmarcafondo > .layout >  .box-1 > .title > div  {
          margin-bottom: 40px;
          margin-top: 40px;
         width: 700px; 
-        
-        
          display: block;
        }
   }
