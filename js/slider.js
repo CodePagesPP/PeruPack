@@ -12,5 +12,5 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     images[0].classList.add("active"); 
-    setInterval(changeSlide, 5000); 
+    setInterval(changeSlide, 3500); 
 });
