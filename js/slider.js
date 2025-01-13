@@ -10,7 +10,24 @@ document.addEventListener("DOMContentLoaded", () => {
         const nextImage = images[currentIndex];
         nextImage.classList.add("active");
     }
+    function updateImages() {
+        const isMobile = window.innerWidth <= 450;
+    
+        images.forEach((image, index) => {
+          if (isMobile) {
+            image.src = `./assets/mobile${index + 1}.png`;
+          } else {
+            image.src = `./assets/desktop${index + 1}.png`;
+          }
+        });
+      }
+    
+      // Llama a la función al cargar la página y al redimensionar
+      updateImages();
+      window.addEventListener("resize", updateImages);
 
     images[0].classList.add("active"); 
     setInterval(changeSlide, 3500); 
 });
+
+
