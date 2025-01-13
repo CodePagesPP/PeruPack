@@ -846,7 +846,6 @@ html.not-scroll-top-0 .wrap .top-bar2 > .gnb > .btns >.allmenu-btn::after, .wrap
 
     .images img {
         object-fit: contain;
-        top: 50px;
     }
 }
 
