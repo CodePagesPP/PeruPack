@@ -1253,13 +1253,13 @@ section > .cipsurmarcafondo > .layout > .box-1 {
 }
 
 section > .cipsurmarcafondo > .layout >  .box-1 > .title {
-    font-size:35px;
-      line-height:46px;
-     margin-top: 80px;
-      color:#000000;
-      font-weight:300; 
-      display:inline-block;
-     margin-bottom: 1px;
+    font-size:36px;
+    line-height:46px;
+    margin:0 0 45px 0;
+    color:rgb(0, 0, 0);
+    font-weight:300; 
+    display:inline-block;
+    margin-top:80px;
 }
 
 section > .cipsurmarcafondo > .layout >  .box-1 > .title > div  {
@@ -1283,7 +1283,7 @@ section > .cipsurmarcafondo > .layout >  .box-1 > .title > div  {
       transform:rotate(180deg);
   }
   section > .news > .layout > .box-1 > .title {
-      font-size:40px;
+      font-size:36px;
       line-height:46px;
       margin:0 0 45px 0;
       color:#000000;
@@ -3021,13 +3021,13 @@ section > .cipsurmarcafondo > .layout >  .box-1 > .title > div  {
         margin: 30px;
         border-radius: 6px;
         overflow: hidden;
-        
         cursor: default;
         transition: all 400ms ease;
+        margin-top: -30px;
     }
 
     .cipsurmarcafondo .carderecha h3 {
-        padding: 16px 20px;
+        padding: 0px 20px;
         font-size: 20px;
       }
 
@@ -3089,6 +3089,27 @@ section > .cipsurmarcafondo > .layout >  .box-1 > .title > div  {
         margin-left: 0px;
         margin-top: 38px;
        }
+
+       section > .news > .layout > .box-1 > .title {
+        font-size:40px;
+        line-height:46px;
+        margin:0 0 45px 0;
+        color:#000000;
+        font-weight:300; 
+        display:inline-block;
+        margin-top:80px;
+    }
+
+    section > .cipsurmarcafondo > .layout >  .box-1 > .title {
+        font-size:35px;
+        line-height:46px;
+        margin:0 0 45px 0;
+        color:rgb(0, 0, 0);
+        font-weight:300; 
+        display:inline-block;
+        margin-top:80px;
+        margin-bottom: 1px;
+    }
 
        .cipsurmarcafondo .carderecha a {
         text-decoration: none;
