@@ -132,7 +132,7 @@
     }
     .nav__close{
         position: absolute;
-        top: 30px;
+        top: 40px;
         right: 30px;
         width: 30px;
         cursor: pointer;
@@ -3112,7 +3112,7 @@ section > .cipsurmarcafondo > .layout >  .box-1 > .title > div  {
     }
 
     section > .cipsurmarcafondo > .layout >  .box-1 > .title {
-        font-size:35px;
+        font-size:31px;
         line-height:46px;
         margin:0 0 45px 0;
         color:rgb(0, 0, 0);
