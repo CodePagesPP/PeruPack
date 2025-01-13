@@ -820,7 +820,7 @@ html.not-scroll-top-0 .wrap .top-bar2 > .gnb > .btns >.allmenu-btn::after, .wrap
     }
 
     .images img {
-        object-fit: cover; /* Asegura que se adapte bien */
+        object-fit: fill; /* Asegura que se adapte bien */
     }
 }
 
@@ -832,7 +832,7 @@ html.not-scroll-top-0 .wrap .top-bar2 > .gnb > .btns >.allmenu-btn::after, .wrap
     }
 
     .images img {
-        object-fit: cover;
+        object-fit: contain;
     }
 }
 
@@ -845,7 +845,8 @@ html.not-scroll-top-0 .wrap .top-bar2 > .gnb > .btns >.allmenu-btn::after, .wrap
     }
 
     .images img {
-        object-fit: cover;
+        object-fit: contain;
+        top: 50px;
     }
 }
 
