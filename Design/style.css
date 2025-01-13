@@ -3027,12 +3027,12 @@ section > .cipsurmarcafondo > .layout >  .box-1 > .title > div  {
     }
 
     .cipsurmarcafondo .carderecha h3 {
-        padding: 0px 20px;
+        padding: 0px 0px;
         font-size: 20px;
       }
 
      .cipsurmarcafondo .carderecha .pderecha {
-        padding: 20px;
+        padding: 0px;
         font-size: 15px;
         margin-bottom: 25px;
       }
@@ -3090,6 +3090,13 @@ section > .cipsurmarcafondo > .layout >  .box-1 > .title > div  {
         margin-top: 38px;
        }
 
+       .top-bar2 .bandera {
+        display: inline-block;
+        margin-left: 10px; 
+        vertical-align: middle;
+        padding-top: 2%;
+    }   
+
        section > .news > .layout > .box-1 > .title {
         font-size:40px;
         line-height:46px;
@@ -3121,7 +3128,7 @@ section > .cipsurmarcafondo > .layout >  .box-1 > .title > div  {
         border-radius: 4px;
         transition: all 400ms ease;
         padding: 7px;
-        margin-left: 6%;
+        margin-left: 1%;
       }  
 
     .cipsurmarcafondo .containercipsur .linea {
@@ -3157,7 +3164,7 @@ section > .cipsurmarcafondo > .layout >  .box-1 > .title > div  {
     display: inline-block;
     margin-left: 10px; 
     vertical-align: middle;
-    padding-bottom: 10px; 
+    padding-bottom: 4px; 
 }
 
 
