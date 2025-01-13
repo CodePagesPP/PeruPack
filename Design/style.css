@@ -90,7 +90,7 @@
     
     .top-bar2 {
         position:fixed;
-        padding-top: 20px;
+        padding-top: 30px;
         top:30px;
         left:0;
         width:100%;
@@ -308,7 +308,7 @@
   }
 
 .infoheader{
-    height: 45px;
+    height: 35px;
     position:fixed;
     
     top:0;
@@ -383,7 +383,7 @@
     padding-top: 20px;
     left:0;
     top:40px;
-    height: 50px;
+    height: 70px;
     width:100%;
     transition:background .3s;
     z-index:10;
@@ -544,7 +544,7 @@ html.not-scroll-top-0 .wrap .top-bar2 > .gnb > .btns >.allmenu-btn::after, .wrap
 
 @media ( max-width:1100px ) {
     .top-bar2 .menu-box-1 > ul > li:first-child > a {
-        padding-left:50px;
+       
     }
 
     .top-bar2 .menu-box-1 > ul > li:last-child > a {
@@ -1253,13 +1253,13 @@ section > .cipsurmarcafondo > .layout > .box-1 {
 }
 
 section > .cipsurmarcafondo > .layout >  .box-1 > .title {
-    font-size:36px;
+    font-size:35px;
       line-height:46px;
      margin-top: 80px;
       color:#000000;
       font-weight:300; 
       display:inline-block;
-     
+     margin-bottom: 1px;
 }
 
 section > .cipsurmarcafondo > .layout >  .box-1 > .title > div  {
@@ -1283,7 +1283,7 @@ section > .cipsurmarcafondo > .layout >  .box-1 > .title > div  {
       transform:rotate(180deg);
   }
   section > .news > .layout > .box-1 > .title {
-      font-size:36px;
+      font-size:40px;
       line-height:46px;
       margin:0 0 45px 0;
       color:#000000;
@@ -2700,13 +2700,13 @@ section > .cipsurmarcafondo > .layout >  .box-1 > .title > div  {
   
     .footer-social {
       justify-content: center;
-      margin-bottom: 20px;
+      padding: 14px;
     }
   
     .social-icon {
-      width: 35px;
-      height: 35px;
-      font-size: 16px;
+      width: 45px;
+      height: 45px;
+      font-size: 25px;
     }
   }
   
@@ -2717,7 +2717,7 @@ section > .cipsurmarcafondo > .layout >  .box-1 > .title > div  {
     }
   
     .footer-logo img {
-      width: 150px;
+      width: 250px;
       height: auto;
     }
   
@@ -3058,7 +3058,9 @@ section > .cipsurmarcafondo > .layout >  .box-1 > .title > div  {
 
    .containercipsur img {
     
-    margin-bottom: 90px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-top: 120px;
    }
 
    
@@ -3071,7 +3073,7 @@ section > .cipsurmarcafondo > .layout >  .box-1 > .title > div  {
         margin-right: 40px;
         margin-bottom: 40px;
         margin-top: 20px;
-        height: 490px; 
+        height: 400px; 
         display: block;
        }
   }
@@ -3080,6 +3082,26 @@ section > .cipsurmarcafondo > .layout >  .box-1 > .title > div  {
     .containercipsur {
         flex-wrap: wrap;
     }
+
+    .containercipsur img {
+    
+        margin-bottom: 10px;
+        margin-left: 0px;
+        margin-top: 38px;
+       }
+
+       .cipsurmarcafondo .carderecha a {
+        text-decoration: none;
+        display: inline-block;
+        background-color: #ff6525;
+        margin-top: 10px;
+        color: #ffffff;
+        border: 1px solid #ff6525;
+        border-radius: 4px;
+        transition: all 400ms ease;
+        padding: 7px;
+        margin-left: 6%;
+      }  
 
     .cipsurmarcafondo .containercipsur .linea {
         border-top: rgb(94, 89, 89)  1px solid;
@@ -3113,7 +3135,8 @@ section > .cipsurmarcafondo > .layout >  .box-1 > .title > div  {
   .top-bar2 .bandera {
     display: inline-block;
     margin-left: 10px; 
-    vertical-align: middle; 
+    vertical-align: middle;
+    padding-bottom: 10px; 
 }
 
 
