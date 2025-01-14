@@ -132,7 +132,7 @@
     }
     .nav__close{
         position: absolute;
-        top: 30px;
+        top: 50px;
         right: 30px;
         width: 30px;
         cursor: pointer;
@@ -771,29 +771,29 @@ html.not-scroll-top-0 .wrap .top-bar2 > .gnb > .btns >.allmenu-btn::after, .wrap
 .images {
     position: relative;
     width: 100%;
-    height: calc(100vh - 100px); /* Ajusta '50px' según la altura de la franja superior */
+    height: calc(100vh - 100px); 
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+
     top: 100px;
     margin-bottom: 100px;
 }
 
-/* Imágenes dentro del slider */
+
 .images img {
     width: 100%;
     height: 100%;
-    object-fit: fill; /* Para que las imágenes llenen el contenedor */
-    position: absolute; /* Para el manejo del slider */
+    object-fit: fill; 
+    position: absolute; 
 }
 
 .slider {
     position: relative;
     width: 100%;
     height: 100%;
-    overflow: hidden; /* Oculta cualquier imagen fuera de la vista */
-    display: flex; /* Para alinear las imágenes en fila */
+    overflow: hidden; 
+    display: flex; 
 }
 
 .slider-image {
@@ -815,16 +815,16 @@ html.not-scroll-top-0 .wrap .top-bar2 > .gnb > .btns >.allmenu-btn::after, .wrap
 }
 @media (max-width: 1366px) {
     .images {
-        height: calc(100vh - 80px); /* Reduce la altura */
-        top: 80px; /* Ajusta la posición superior */
+        height: calc(100vh - 80px); 
+        top: 80px; 
     }
 
     .images img {
-        object-fit: fill; /* Asegura que se adapte bien */
+        object-fit: fill; 
     }
 }
 
-/* Tablets (pantallas entre 768px y 1024px) */
+
 @media (max-width: 1024px) {
     .images {
         height: calc(100vh - 60px);
@@ -836,34 +836,34 @@ html.not-scroll-top-0 .wrap .top-bar2 > .gnb > .btns >.allmenu-btn::after, .wrap
     }
 }
 
-/* Teléfonos móviles (pantallas hasta 768px) */
+
 @media (max-width: 768px) {
     .images {
-        height: 50vh; /* Reduce la altura para pantallas pequeñas */
+        height: 50vh; 
         top: 50px;
-        margin-bottom: 0; /* Elimina el margen inferior */
+
     }
 
     .images img {
         object-fit: contain;
+        top: 50px;
     }
 }
 
-/* Teléfonos pequeños (pantallas menores a 480px) */
+
 @media (max-width: 480px) {
     .images {
-        height: 60vh; /* Aún más pequeño */
-        top: 18px;
+        height: 50vh;
+        top: 80px;
     }
 
     .images img {
-        object-fit: contain; /* Mantiene la adaptabilidad */
+        object-fit: fill; 
         width: 100%;
         height: 100%;
-        top: 4px;
+        top: 48px;
     }
 }
-
 /* Responsive */
 @media (min-width: 768px) {
     .containerbanner {
