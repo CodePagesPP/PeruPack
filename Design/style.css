@@ -101,9 +101,10 @@
     }
     .nav__menu{
         display: block;
+       
     }
     .nav__link {
-    
+        
         margin-left: auto;
         padding: 0;
         display: grid;
@@ -113,36 +114,73 @@
         
     }
 
-    .nav__link--menu{
+    .nav__link--menu {
         position: fixed;
-        background-color: #000;
+        background-color: #ffffff;
         top: 0;
-        left: 0;
+        left: -100%; /* Comienza completamente fuera del viewport */
         height: 100%;
-        width: 100%;
+        width: 50%; /* Ocupa la mitad de la pantalla */
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        z-index: 100;
-        opacity: 0;
-        pointer-events: none;
-        transition: .7s opacity;
         z-index: 9999;
+        transition: left 0.7s ease; /* Transición para el movimiento */
+        opacity: 1; /* Asegura que el menú sea visible al abrir */
+        pointer-events: none; /* Deshabilita interacciones cuando está cerrado */
     }
-    .nav__close{
+    .nav__close {
         position: absolute;
         top: 40px;
-        right: 30px;
+        right: 20px;
         width: 30px;
         cursor: pointer;
     }
-
+    .nav__links{	
+        color: #000000;
+    }
+    .nav__link--menu.show {
+        left: 0; 
+        transform: translateX(50%);
+        opacity: 1; 
+        pointer-events: all; 
+    }
+    .nav__image {
+        position: absolute;
+        top: 6%;
+        left: 20px;
+        transform: translateY(-50%); 
+        width: 150px; 
+        height: auto; 
+        object-fit: cover; 
+    }
+    .line {
+        background-color: #A7ABAA;
+        position: absolute;
+        top: 9%;
+        left: 0; 
+        transform: translateY(-50%); 
+        width: 100%; 
+        height: 1px; 
+        object-fit: cover; 
+    }
     .nav__link--show{
+     
         --show: block;
         opacity:1 ;
         pointer-events: unset;
     }
+
+    .nav__link--menu.nav__link--show {
+        left: 0; /* Desplaza el menú al viewport */
+        pointer-events: all; /* Habilita interacciones */
+    }
+}
+@media (min-width:1214px){
+.nav__image {
+    display: none;
+}
 }
 
   .questions__offerautos{
@@ -543,9 +581,7 @@ html.not-scroll-top-0 .wrap .top-bar2 > .gnb > .btns >.allmenu-btn::after, .wrap
 }
 
 @media ( max-width:1100px ) {
-    .top-bar2 .menu-box-1 > ul > li:first-child > a {
-       
-    }
+    
 
     .top-bar2 .menu-box-1 > ul > li:last-child > a {
         padding-right:50px;
