@@ -85,7 +85,13 @@
         
     }
 }
-
+@media (max-width:400px){
+    .infoheader .info p{
+        margin-top: 2px;
+        font-weight: 900;
+        font-size: 15px;
+    }
+}
 @media (max-width:1214px){
     
     .top-bar2 {
@@ -110,21 +116,22 @@
         display: grid;
        
         grid-auto-columns: max-content;
-        gap: 2em;
+    
         
     }
 
     .nav__link--menu {
+        padding-top: 120px;
         position: fixed;
         background-color: #ffffff;
         top: 0;
         left: -100%; 
         height: 100%;
-        width: 50%; 
+        width: 80%; 
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
+       
+        align-items: baseline;
         z-index: 9999;
         transition: left 0.7s ease; 
         opacity: 1; 
@@ -132,13 +139,14 @@
     }
     .nav__close {
         position: absolute;
-        top: 40px;
+        top: 2.5%;
         right: 5px;
         width: 30px;
         cursor: pointer;
     }
     .nav__links{	
         color: #000000;
+        
     }
     .nav__link--menu.show {
         left: 0; 
@@ -148,13 +156,23 @@
     }
     .nav__image {
         position: absolute;
-        top: 6%;
-        left: 0px;
+        top: 4.5%;
+        left: 6px;
         transform: translateY(-50%); 
-        width: 150px; 
+        width: 200px; 
         height: auto; 
         object-fit: cover; 
     }
+
+    .top-bar2 .menu-box-1 > ul > li > a {
+        padding:0 20px;
+        font-size:1.2rem;
+        letter-spacing:-0.1rem;
+        font-weight:bold;
+        margin-bottom: 20px;
+    }
+
+
     .line {
         background-color: #A7ABAA;
         position: absolute;
@@ -353,7 +371,7 @@
     left:0;
     width:100%;
     transition:background .3s;
-    z-index:10000;
+    z-index:10;
     background-color: #ffffff
    
 }
@@ -569,7 +587,7 @@ html.not-scroll-top-0 .wrap .top-bar2 > .gnb > .btns >.allmenu-btn::after, .wrap
 /* 상단 서브메뉴시작 */
 .top-bar2 .menu-box-1 > ul > li > a {
     padding:0 20px;
-    font-size:1.3rem;
+    font-size:1.2rem;
     letter-spacing:-0.1rem;
     font-weight:bold;
 }
@@ -2877,7 +2895,7 @@ section > .cipsurmarcafondo > .layout >  .box-1 > .title > div  {
         display: inline-block;
         margin-left: 10px; 
         vertical-align: middle;
-        padding-top: 2%;
+        padding-top: 35px;
     }   
 
        section > .news > .layout > .box-1 > .title {
@@ -2947,7 +2965,8 @@ section > .cipsurmarcafondo > .layout >  .box-1 > .title > div  {
     display: inline-block;
     margin-left: 10px; 
     vertical-align: middle;
-    padding-bottom: 4px; 
+    padding-bottom: 4px;
+    margin-top: -26px; 
 }
 
 

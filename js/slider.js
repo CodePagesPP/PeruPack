@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
         nextImage.classList.add("active");
     }
     function updateImages() {
-        const isMobile = window.innerWidth <= 450;
+        const isMobile = window.innerWidth <= 540;
     
         images.forEach((image, index) => {
           if (isMobile) {
