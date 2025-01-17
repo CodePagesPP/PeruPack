@@ -439,7 +439,7 @@
     padding-top: 20px;
     left:0;
     top:40px;
-    height: 70px;
+    height: 50px;
     width:100%;
     transition:background .3s;
     z-index:10;
@@ -870,7 +870,7 @@ html.not-scroll-top-0 .wrap .top-bar2 > .gnb > .btns >.allmenu-btn::after, .wrap
 @media (max-width: 1366px) {
     .images {
         height: calc(100vh - 80px); /* Reduce la altura */
-        top: 80px; /* Ajusta la posición superior */
+        top: 100px; /* Ajusta la posición superior */
     }
 
     .images img {
