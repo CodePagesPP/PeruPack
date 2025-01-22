@@ -96,7 +96,7 @@
     
     .top-bar2 {
         position:fixed;
-        padding-top: 30px;
+        padding-top: 19px;
         top:30px;
         left:0;
         width:100%;
@@ -915,7 +915,7 @@ html.not-scroll-top-0 .wrap .top-bar2 > .gnb > .btns >.allmenu-btn::after, .wrap
         object-fit: fill; /* Mantiene la adaptabilidad */
         width: 100%;
         height: 100%;
-        top: 48px;
+        top: 29px;
     }
 }
 
